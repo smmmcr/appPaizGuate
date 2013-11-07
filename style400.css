@@ -1,0 +1,646 @@
+* {
+padding: 0;
+margin: 0;
+text-decoration:none;
+list-style-type:none;
+}
+#miercoles{
+background: yellow;
+}
+body {
+background: #0068a6 /*{a-body-background-color}; */
+ /* background-image: -webkit-gradient(linear, left top, left bottom, from( #0072b6 /*{a-body-background-start}*/), to( #005d95 /*{a-body-background-end}*/));
+font-size:arial;
+-webkit-user-select:none;
+-webkit-text-size-adjust:none;
+}
+#miercoles{
+background: yellow!important;
+}
+#wrapper_miercoles{
+background: yellow!important;
+width: 100%;
+
+}
+p{
+color: rgb(247, 11, 11);
+font-weight: bold;
+font-size: 133.4%;
+position: relative;
+}
+.ui-header img{
+width: 50%;
+display: block;
+margin: 0 auto;
+}
+.ui-content{
+
+height: 100%;
+background-size: 100% 100%;
+
+}
+.sugar{
+height: 100%;
+background: #FEFCDB!important;
+}
+[data-role="page"]{
+background: url(img/bgSombraFlor.png)!important;
+}
+.ui-header{
+box-shadow: 0px 3px 18px 1px #000;
+}
+.ui-footer{
+box-shadow: 0px 6px 30px 9px #000;
+}
+#cargaimg{
+width: 100%;
+position: absolute;
+margin-top: 77px;
+height: 100%;
+background: #0068a6;
+}
+#cargaimg img{
+margin-left: 27%;
+margin-top: 41%;
+width: 45%;
+}
+#menuP {
+width:98%;
+overflow:hidden;
+z-index: -1;
+margin-left: 3%;
+}
+#menuP img{
+width:87%;
+}
+#nextMenu{
+position: absolute;
+right: 0px;
+width: 12%;
+height: 100%;
+background: rgba(0, 0, 0, 0.28);
+padding-top: 50%;
+z-index: 900;
+}
+#prevMenu{
+position: absolute;
+left: 0px;
+width: 12%;
+height: 100%;
+background: rgba(0, 0, 0, 0.28);
+padding-top: 50%;
+z-index: 900;
+}
+.ui-bar-a{
+background-image: url(img/header.png)!important;
+background-size: 100%!important;
+border:none;
+}
+.ui-footer{
+background-image: url(img/footer.png)!important;
+background-size: 100% 100%!important;
+border:none;
+height: 10%;
+}
+.headerGuia{
+background:url(img/subheader_bg.png);
+min-height:50px;
+background-size:100% 100%;
+text-align:center;
+padding-top:10px;
+}
+.ui-btn-text {
+font-size: 16px;
+}
+h3, h2, #gfcProductosdetail {
+font-size: 17px!important;
+}
+#recetas .contenidoGeneral {
+width: 93%!important;
+height: 664px;
+}
+#tituingre {
+margin-left: 0px;
+color: rgb(8, 30, 100);
+width: 100%;
+}
+.retro {
+width: 30px;
+height: 23px;
+min-width: 0px;
+padding: 0;
+margin: 0px;
+background: none;
+border: none;
+box-shadow: none;
+border-top: 0;
+position: absolute;
+left: 0px;
+}
+#ingredientes, #preparacion {
+color: #302A2A;
+}
+#nombrereceta {
+margin: auto;
+width: 73%;
+color: #0B75BA!important;
+text-align: center;
+}
+#regresar {
+position: absolute;
+bottom: 0px;
+right: 38%;
+font-weight: bold;
+color: rgb(0, 0, 0);
+width: 89px;
+padding-left: 23px;
+background: rgb(255, 253, 253);
+border: 1px solid rgba(141, 131, 131, 0.56);
+}
+#recetafinal {
+width: 470px;
+background: #fff;
+border-radius: 12px;
+box-shadow: 0px 7px 53px 8px #000;
+position: relative;
+margin: 0 auto;
+width: 100%;
+height: 100%;
+padding-bottom: 5%;
+overflow: hidden;
+}
+#recetafinal img {
+width: 50%;
+height: 155px;
+border-bottom: 1px solid;
+z-index: 999;
+margin: 0 auto;
+display: block;
+}
+#contenidoreceta {
+width: 90%;
+height: 238px;
+position: relative;
+padding-bottom: 6%;
+padding-left: 20px;
+}
+#contenidorecetaSugar {
+width: 90%;
+height: 238px;
+position: relative;
+padding-left: 20px;
+}
+#contacto .contenidoGeneral {
+width: 95%!important;
+height: 588px;
+margin: 0 auto;
+}
+#tiendasinfo {
+position: relative;
+width: 100%;
+margin-left: 0px;
+}
+#tiendasinfo{
+position: relative;
+width: 100%;
+margin-left: 0px;
+}
+#nav {
+	width:300px;
+	float:left;
+}
+#prev, #next {
+	float:left;
+	font-weight:bold;
+	font-size:14px;
+	padding:5px 0;
+	width:80px;
+}
+#next {
+	float:right;
+	text-align:right;
+}
+#indicator, #indicator > li {
+	display:block; float:left;
+	list-style:none;
+	padding:0; margin:0;
+}
+#indicator {
+	width:110px;
+	padding:12px 0 0 30px;
+}
+#indicator > li {
+	text-indent:-9999em;
+	width:8px; height:8px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	-o-border-radius:4px;
+	border-radius:4px;
+	background:#ddd;
+	overflow:hidden;
+	margin-right:4px;
+}
+#indicator > li.active {
+	background:#888;
+}
+#indicator > li:last-child {
+	margin:0;
+}
+#productosGuia{
+height: 64%;
+width: 94%;
+overflow: hidden;
+position: absolute;
+}
+#sliderSuper{
+width: 100%;
+position: relative;
+}
+#sliderSuper img{
+width: 100%;
+}
+.btnfooter{
+width: 50%;
+float: left;
+margin-top: 15px;
+color: #fff!important;
+}
+.btnfooter a{
+color: #fff!important;
+}
+.footer  div:nth-child(2){
+width: 19%;
+margin-left: 27%;
+margin-left: 27%;
+}
+#selectores{
+width: 85%;
+margin-left: 8%;
+margin-top: 26px;
+margin-bottom: 40%;
+}
+#selectores select{
+cursor: pointer;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+-ms-filter: "alpha(opacity=0)";
+filter: alpha(opacity=0);
+}
+#busquedarapida{
+margin-left: 12%;
+}
+#contenidoulbusqueda {
+height: 500px;
+position: relative;
+}
+#btnsgeneralLlama{
+margin: 0 auto;
+width: 83%;
+position: relative;
+margin-top: 25px;
+}
+#btnsgeneralLlama .sombra{
+box-shadow: 3px 5px 22px 0px #000;
+}
+#tiendas2{
+width: 100%;
+margin: 0 auto;
+}
+#btnsgeneralLlama img{
+margin-top: 13px;
+margin-left: 20%;
+width: 61%;
+height: 59px;
+}
+#selectrecetas{
+cursor: pointer;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+-ms-filter: "alpha(opacity=0)";
+filter: alpha(opacity=0);
+}
+#menurecetas{
+position:relative;
+width:100%;
+height:50px;
+}
+#recetafinalGluten {
+width: 470px;
+background: #fff;
+border-radius: 12px;
+box-shadow: 0px 7px 53px 8px #000;
+position: relative;
+margin: 0 auto;
+width: 100%;
+height: 100%;
+padding-bottom: 5%;
+height: 437px;
+}
+#scrollerPasos1 {
+width: 100%;
+position: relative;
+margin: auto auto;
+height: 450px;
+padding-bottom: 50px;
+padding-top: 56px;
+}
+#otro p{ 
+color:#000!important;
+}
+#recetafinalGluten img {
+width: 54%;
+height: 10em;
+margin: 0 auto;
+display: block;
+}
+#contenidorecetaGluten {
+overflow: hidden;
+width: 92%;
+position: relative;
+height: 403px;
+color: #302A2A;
+margin-left: 5%;
+margin-right: 8%;
+}
+#Scrollerpasos{
+background: rgba(255, 255, 255, 1)!important;
+color: rgba(0, 0, 0, 0.98);
+border-radius: 25px;
+padding-left: 8%;
+padding-right: 8%;
+height: 490px;
+position: relative;
+overflow: hidden;
+padding-bottom: 5%;
+}
+#contPasos {
+box-shadow: 0 0 0 0;
+border: none;
+width: 100%;
+margin: 0 auto;
+}
+#contPasos p{
+color:#000000!important;
+}
+#map_canvas{
+height: 317px!important;
+width: 100%!important;
+position: relative;
+background-color: rgb(229, 227, 223);
+overflow: hidden;
+-webkit-transform: translateZ(0);
+border-bottom: 23px solid rgb(211, 143, 21);
+margin-top: 0px;
+}
+.gluten {
+background:url(img/bg_celiacos.jpg) repeat;
+}
+.gluten .ui-content{
+ background:none;
+ }
+#listatiendasinfo{
+width: 100%;
+margin-left: 24px;
+margin-top: 27px;
+height: 646px;
+}
+img.logo_celiacos{
+margin: 10px auto;
+display: block;
+}
+#listatiendasinfo{
+width: 100%;
+margin-left: 0px!important;
+margin-top: 0%;
+position: relative;
+height: 50px;
+padding: 0px;
+}
+#tiendasinfo p {
+color: rgb(87, 82, 82);
+}
+.ui-mobile [data-url="mostrarmapa&ui-page=otro"]{
+background:url(img/bgSombraFlor.png) no-repeat;
+height:auto;
+background-size: 100% 100%;
+}
+.clear{
+height:100px;
+}
+.ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-thumb {
+min-height: 23px!important
+}
+.ui-btn-text {
+font-size: 13pt;
+}
+.weze {
+width: 30%!important;
+float: left!important;
+}
+#tiendasinfo li{
+position: relative;
+}
+#imgproducto{
+height: 220px!important;
+}
+#imgpro {
+max-height: 206px!important;
+max-width: 224px!important;
+margin-top: 18px!important;
+margin-left: 38%!important;
+}
+#listatiendas li {
+width: 70%;
+float: left;
+}
+#cargaimg{
+width: 100%;
+position: absolute;
+margin-top: 0px;
+height: 100%;
+background: #0068a6;
+z-index: 999;
+}
+/**************************************** Sugar Free *****************************************************/
+#sugar .headerGuia{
+background: url(img/headerPrinSugarFree.png);
+min-height: 200px;
+background-size: 100% 100%;
+text-align: center;
+padding-top: 10px;
+}
+#sugar .ui-content {
+height: 100%;
+background: #FEFCDB;
+}
+#contenidoMenuSugar img {
+width: 80%;
+}
+#aprendamos {
+background: #FEFCDB!important;
+}
+#aprendamos .ui-content {
+height: 100%;
+background: #FEFCDB;
+}
+#cocinemos a,#ProductosSugar a{
+color: #FFFFFF !important;
+text-align: center;
+}
+#aprendamos .ui-btn-up-a,#cocinemos .ui-btn-up-a,#SugarRecetasList .ui-btn-up-a,#ProductosSugar .ui-btn-up-a {
+border: 1px solid #D3813E/*{a-bup-border}*/;
+background: #D3813E /*{a-bup-background-color}*/;
+font-weight: bold;
+color: #FFFFFF !important/*{a-bup-color}*/;
+text-shadow: 0 /*{a-bup-shadow-x}*/ 1px /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ #9C9692 /*{a-bup-shadow-color}*/;
+background-image: -webkit-gradient(linear, left top, left bottom, from( #D3813E /*{a-bup-background-start}*/), to( rgba(240, 175, 123, 0.9) /*{a-bup-background-end}*/));
+background-image: -webkit-linear-gradient( #D3813E /*{a-bup-background-start}*/, rgba(240, 175, 123, 0.9) /*{a-bup-background-end}*/);
+background-image: -moz-linear-gradient( #D3813E /*{a-bup-background-start}*/, rgba(240, 175, 123, 0.9)/*{a-bup-background-end}*/);
+background-image: -ms-linear-gradient( #D3813E /*{a-bup-background-start}*/, rgba(240, 175, 123, 0.9) /*{a-bup-background-end}*/);
+background-image: -o-linear-gradient( #D3813E /*{a-bup-background-start}*/, rgba(240, 175, 123, 0.9) /*{a-bup-background-end}*/);
+background-image: linear-gradient( #D3813E /*{a-bup-background-start}*/, rgba(240, 175, 123, 0.9) /*{a-bup-background-end}*/);
+}
+#etapa1,#etapa2{
+width: 91%;
+display: block;
+margin: 0 auto;
+}
+.sugar {
+background: #FEFCDB!important;
+}
+.footer img{
+position:absolute;
+width:100%;
+height:100%;
+}
+.headerGuia [data-rel="back"]{
+width: 30px!important;
+min-width: 0px!important;
+padding: 0!important;
+margin: 0px!important;
+background: none!important;
+border: none!important;
+box-shadow: none!important;
+border-top: 0!important;
+position: absolute;
+left: 0;
+}
+.headerGuia [data-rel="back"] span{
+
+
+border: none;
+box-shadow: none;
+border-top: 0;
+}
+#imgpro {
+max-height: 206px!important;
+max-width: 224px!important;
+margin: 0 auto!important;
+position:relative!important;
+}
+#listasuperdisp2 {
+text-align:center;
+}
+.ui-mobile [data-url="sugarVariedadDetail&ui-page=sugar"]{
+background: #FEFCDB;
+}
+.headerGuia a img{
+width: 80%;
+}
+#ProductosSugar{
+height: 377px;
+position: relative;
+padding-bottom: 44px;
+}
+.logo_sugar{
+width: 23%;
+margin: 0 auto;
+margin-left: 34%;
+}
+#contenScrollP1,#contenScrollP2,#contenScrollP3,#contenScrollP4{
+position: relative;
+height: 290px;
+overflow: hidden;
+padding-left: 5%;
+padding-right: 9%;
+}
+.cucharaditas{
+text-align: center;
+}
+#titulos{
+background: rgba(221, 221, 221, 0.79);
+}
+#contenScrollP1 p,#contenScrollP2 p,#contenScrollP3 p,#contenScrollP4 p{
+color:#7F4738;
+}
+/********************************** scroll Guía y miercoles frescos  *****************************************/
+@media only screen and (min-width :400px) and (max-width :450px) {
+	#wrapper_guia, #wrapper_miercoles {	
+	width: 362px;
+	height: 359px;
+	overflow: hidden!important;
+	margin: auto auto!important;
+	margin-top: 15%!important;
+	}
+	#wrapper_miercoles li, #wrapper_guia li {
+	width: 362px!important;
+	height: 359px!important;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	float:left;
+	}
+	#wrapper_miercoles img, #wrapper_guia img{
+	width: 362px;
+	height: 359px;	
+	float: left;
+	}
+}
+@media only screen and (min-width :451px) and (max-width :515px){
+	#wrapper_guia, #wrapper_miercoles {	
+	width: 411px;
+	height: 396px;
+	overflow: hidden!important;
+	margin: auto auto!important;
+	margin-top: 20%!important;
+	}
+	#wrapper_miercoles li, #wrapper_guia li {
+	width: 411px;
+	height: 396px;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	float:left;
+	}
+	#wrapper_miercoles img, #wrapper_guia img{
+	width: 411px;
+	height: 396px;
+	}
+}
+@media only screen and (min-width :516px) {
+	#wrapper_guia, #wrapper_miercoles {	
+	width: 465px;
+	height: 430px;
+	overflow: hidden!important;
+	margin: auto auto!important;
+	margin-top: 14%!important;
+	}
+	#wrapper_miercoles li, #wrapper_guia li {
+	width: 465px;
+	height: 430px;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	float: left;
+	}
+	#wrapper_miercoles img, #wrapper_guia img{
+	width: 465px;
+	height: 430px;
+	}
+}

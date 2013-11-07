@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<widget  xmlns     = 'http://www.w3.org/ns/widgets'
+        xmlns:gap = 'http://phonegap.com/ns/1.0'
+		id="masxmenos" version="1.0.3">
+
+	<name>Masxmenos</name>
+	<description>Masxmenos</description>
+	<author>SMMM</author>	<gap:platforms>
+		<gap:platform name="ios" />
+		<gap:platform name="android" />
+	</gap:platforms>	
+
+	<icon src="logoApp.png" width="128" height="128" gap:role="default" />	
+	<icon src="logoApp57.png" width="57" height="57" gap:role="default" />	
+	<icon src="logoApp72.png" width="72" height="72" gap:role="default" />	
+	<!--<preference name="permissions" value="none"/>-->
+	<preference name="phonegap-version" value="2.9.0" />
+	<access origin="*" />
+	
+	<!--<feature name="http://api.phonegap.com/1.0/network"/>-->	
+	<preference name="orientation" value="portrait" />
+	<preference name="fullscreen" value="true" />
+	<preference name="target-device" value="universal" />
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+
+<feature name="http://api.phonegap.com/1.0/network"/>
+
+  	<!-- Optional splash screen image, e.g.: -->
+	<gap:splash src="splash.png" width="768" height="1024" />
+
+</widget>
