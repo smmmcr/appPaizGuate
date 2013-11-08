@@ -9,7 +9,7 @@ var fileSystem = {};
 document.addEventListener("deviceready", onDeviceReady, false);
  function onDeviceReady() {
 //Inicializamos las BD
-checkConnection();
+//checkConnection();
     }
 window.addEventListener('load', function() {
 			document.body.addEventListener('touchmove', function(e) {
@@ -25,7 +25,7 @@ $(document).one("mobileinit", function () {
 	$("#cargaimg" ).show();
 	/*alert($(window).width());
 	alert($(window).height());*/
-	//appDB();
+	appDB();
 
 });
 	 function checkConnection() {
@@ -48,29 +48,18 @@ $(document).one("mobileinit", function () {
 			}
         }
 function appDB() {
-	db = window.openDatabase("masxmenos", "1.0", "Masxmenos", 2000000);
+	db = window.openDatabase("paizguatemala", "1.0", "paizguatemala", 2000000);
 	db.transaction(populateRecetasDB, errorCB, successCB);
-	GlutenDB();
 }
 // Populate the database 
 function populateRecetasDB(tx) {
 	/*CREACION TABLA CLIENTES*/
 	 tx.executeSql('DROP TABLE IF EXISTS tipoReceta');
-	 tx.executeSql('DROP TABLE IF EXISTS recomendaciones');
 	 tx.executeSql('DROP TABLE IF EXISTS banner');
-	 tx.executeSql('DROP TABLE IF EXISTS conocersugar');
-	 tx.executeSql('DROP TABLE IF EXISTS categoriassugar');
 	 tx.executeSql('DROP TABLE IF EXISTS recetas');
 	 tx.executeSql('DROP TABLE IF EXISTS guia');
-	 tx.executeSql('DROP TABLE IF EXISTS productosVariedadSugar');
-	tx.executeSql('DROP TABLE IF EXISTS recetasSugerFree');
 	 tx.executeSql('DROP TABLE IF EXISTS miercolesFrescos');
-	tx.executeSql('CREATE TABLE IF NOT EXISTS productosVariedadSugar (id INTEGER PRIMARY KEY, nombre TEXT,categoria TEXT,marca TEXT,fabricante INTEGER, estado INTEGER,pais INTEGER,imagen TEXT)');
-	tx.executeSql('CREATE TABLE IF NOT EXISTS recetasSugerFree (id INTEGER PRIMARY KEY, titulo TEXT,ingredientes TEXT,preparacion TEXT,categoria INTEGER, estado INTEGER,pais INTEGER,chef TEXT,nutricionales TEXT,imagen TEXT)');
-	 tx.executeSql('CREATE TABLE IF NOT EXISTS conocersugar (id INTEGER PRIMARY KEY, titulo TEXT, texto TEXT, estado INTEGER)');
-	 tx.executeSql('CREATE TABLE IF NOT EXISTS categoriassugar (id INTEGER PRIMARY KEY, nombre TEXT, estado INTEGER, pais INTEGER)');
 	 tx.executeSql('CREATE TABLE IF NOT EXISTS tipoReceta (id INTEGER PRIMARY KEY, nombre TEXT, pais INTEGER, estado INTEGER)');
-	 tx.executeSql('CREATE TABLE IF NOT EXISTS recomendaciones (id INTEGER PRIMARY KEY, recomendacion TEXT, estado INTEGER, pais_local INTEGER, idreceta INTEGER)');
 	 tx.executeSql('CREATE TABLE IF NOT EXISTS recetas (id INTEGER PRIMARY KEY, pais_local INTEGER, nombre TEXT,ingredientes TEXT,preparacion TEXT, img TEXT, estado INTEGER,nombreChef TEXT,actvsemana INTEGER,tiporeceta INTEGER,patrocinador TEXT,dificultad TEXT,tiempo TEXT,porciones TEXT,costo TEXT)');
 	 tx.executeSql('CREATE TABLE IF NOT EXISTS banner (id INTEGER PRIMARY KEY, nombreBanner TEXT, estado INTEGER)');
 	 tx.executeSql('CREATE TABLE IF NOT EXISTS guia (id INTEGER PRIMARY KEY, nombreImg TEXT, estado INTEGER)');
@@ -87,7 +76,7 @@ function successCB() {
 	console.log("success create DB!");
 }	
 function SincronizarDBrecetas(finSincro){
-	url = 'http://smmcr.net/fb/masxmenos/recetas/recetas.php?callback=?';
+	url = 'http://smmcr.net/fb/masxmenos/recetas/dbsuper.php?p=2&callback=?';
 	/*SINCRONIZA CATEGORIAS*/
 	$.getJSON(url,{accion:"tipoReceta"}).done(function( data ) {
 		$.each(data, function(index, item) {
@@ -105,51 +94,6 @@ function SincronizarDBrecetas(finSincro){
 			});
 		});	
 	mostrarBanner();		
-	},finSincro);
-	$.getJSON(url,{accion:"recetaSugar"}).done(function( data ) {
-		//console.log(data);
-		console.log('Iniciando Sincronizacion de Recetas Suger Free...');
-		$.each(data, function(index, item) {	
-			db.transaction(function (tx) { 
-			  tx.executeSql('INSERT INTO recetasSugerFree (id,titulo,ingredientes,preparacion,categoria,estado,pais,chef,nutricionales,imagen) VALUES (?,?,?,?,?,?,?,?,?,?)', [item.id,item.titulo,item.ingredientes ,item.preparacion , item.categoria , item.estado ,item.pais ,item.chef ,item.nutricionales ,item.imagen]);
-			});
-		});
-	},finSincro);
-	$.getJSON(url,{accion:"productosSugar"}).done(function( data ) {
-		console.log('Iniciando Sincronizacion de sugar...');
-		$.each(data, function(index, item) {			
-			db.transaction(function (tx) {  
-			  tx.executeSql('INSERT INTO productosVariedadSugar (id,nombre,categoria,marca,fabricante,estado,pais,imagen) VALUES (?,?,?,?,?,?,?,?)', [item.id,item.nombre,item.categoria,item.marca,item.fabricante,item.estado,item.pais,item.imagen]);
-			});
-		});
-		
-	},finSincro);
-	$.getJSON(url,{accion:"sugar"}).done(function( data ) {
-		console.log('Iniciando Sincronizacion de sugar...');
-		$.each(data, function(index, item) {			
-			db.transaction(function (tx) {  
-			  tx.executeSql('INSERT INTO conocersugar (id, titulo, texto, estado) VALUES (?,?,?,?)', [item.id,item.titulo,item.texto, item.estado]);
-			});
-		});
-		
-	},finSincro);
-	$.getJSON(url,{accion:"categoriassugar"}).done(function( data ) {
-		console.log('Iniciando Sincronizacion de Categoriasugar...');
-		$.each(data, function(index, item) {			
-			db.transaction(function (tx) {  
-			  tx.executeSql('INSERT INTO categoriassugar (id, nombre, estado, pais) VALUES (?,?,?,?)', [item.id,item.nombre,item.estado, item.pais]);
-			});
-		});
-		
-	},finSincro);
-	$.getJSON(url,{accion:"recomendaciones"}).done(function( data ) {
-		console.log('Iniciando Sincronizacion de Recomendaciones...');
-		$.each(data, function(index, item) {			
-			db.transaction(function (tx) {  
-			  tx.executeSql('INSERT INTO recomendaciones (recomendacion, estado, pais_local, idreceta) VALUES (?,?,?,?)', [item.id,item.recomendacion,item.estado, item.pais_local, item.idreceta]);
-			});
-		});
-		
 	},finSincro);
 	/*SINCRONIZA RECETAS*/
 	$.getJSON(url,{accion:"recetas"}).done(function( data ) {
@@ -185,35 +129,20 @@ function SincronizarDBrecetas(finSincro){
 }
 function finSincro(){
 SyncCount++; 
-if (SyncCount >= 10){
-/*	var cant = $("#home ul li").size();
-	var width = $(window).width() - 30;
-	var width_overview =  width * cant;
-	$('#home #scrollMenu').css('width', width_overview+'px');
-	//console.log($( "#etapa1" ).css("height"));*/
-	setTimeout( function() {
-	$( "#menuP" ).css("height",($(window).height()-($(".ui-header").height()*2)));
-		//$( "#etapa1" ).css("height",$( "#menuP" ).height()-15);
-		$( "#etapa2" ).css("height",$( "#etapa1" ).height()-15);
-	myScroll3 = new iScroll('menuP', {hScrollbar: false,vScrollbar: false});
+if (SyncCount >= 4){
 $("#cargaimg" ).hide();
-
-	}, 1000);		
 }
 }
 var tiendas;
 function mostrarcontenidomapa(idcat){
-tiendas=idcat;
-			
-			$.mobile.changePage( "#mostrarmapa", {
-			reverse: false,
-			changeHash: false
-			});
-		
-			
-			
+	tiendas=idcat;			
+	$.mobile.changePage( "#mostrarmapa", {
+	reverse: false,
+	changeHash: false
+	});		
 }
 function visulamapainfo(lat,longi,nombre,direccion,horario,telefono,imagenes){
+ console.log(lat,longi);
  var centerLocation = new google.maps.LatLng(lat,longi);
         var myOptions = {
             center: centerLocation,
@@ -221,10 +150,9 @@ function visulamapainfo(lat,longi,nombre,direccion,horario,telefono,imagenes){
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             callback: function () { alert('callback'); }
         };
-		mapdata=lat+","+longi;			
+		mapdata=lat+","+longi;	
         map_element = document.getElementById("map_canvas");
-        map = new google.maps.Map(map_element, myOptions);
-			
+        map = new google.maps.Map(map_element, myOptions);			
 					nombre=nombre;
 					marker= new google.maps.Marker({						
 					position: new google.maps.LatLng(lat,longi)
@@ -233,7 +161,6 @@ function visulamapainfo(lat,longi,nombre,direccion,horario,telefono,imagenes){
 					});
 					marker.setTitle(nombre);
 					attachSecretMessage(marker);
-
         var mapwidth = $(window).width();
         var mapheight = $(window).height();
         $("#map_canvas").height(mapheight);
@@ -253,7 +180,7 @@ function visulamapainfo(lat,longi,nombre,direccion,horario,telefono,imagenes){
 		 $("#servicios").append("<h3>Servicios:</h3>");
 		$.each(imagenes, function(i, imagen){ 
 
-		 $("#servicios").append("<img src=' img/"+imagen+".png '/>");
+		 $("#servicios").append("<img src=' img/"+imagen+"'/>");
 		});
 }
 function attachSecretMessage(marker) {
@@ -305,48 +232,32 @@ function centrado(lat,longi) {
   map.setCenter(darwin);
 }
 function mostrarcanton(id){
-	var arrCanton =[['	<option value="" >Canton</option><option value="9" class="1" >Montes de Oca</option>'+
-							'<option value="8" class="1" >Moravia</option>'+
-							'<option value="6" class="1" >Vázquez de Coronado</option>'+
-							'<option value="1" class="1" >San José</option>'+
-							'<option value="5" class="1" >Santa Ana</option>'+
-							'<option value="4" class="1" >Goicoechea</option>'+
-							'<option value="7" class="1" >Tibás</option>'+
-							'<option value="3" class="1" >Desamparados</option>'+
-							'<option value="2" class="1" >Escazú</option>'],['<option value="" >Canton</option><option value="10" class="2" >Heredia</option>'+
-							'<option value="11" class="2" >Santo Domingo</option>'+
-							'<option value="14" class="2" >San Pablo</option>'+
-							'<option value="13" class="2" >Flores</option>'+
-							'<option value="12" class="2" >Belén</option>'],['	<option value="" >Canton</option><option value="15" class="3" >Alajuela</option>'],
-							['<option value="" >Canton</option><option value="16" class="6">Garabito</option>'],['<option value="" >Canton</option><option value="18" class="7" >Pococí</option>'+
-						'<option value="17" class="7" >Limón</option>'],['<option value="" >Canton</option><option value="19" class="8" >Central </option><option value="20" class="8" >La Unión</option>']];
-						/*alert(arrCanton[id-1]);*/
+	var arrCanton =[['<option value="" >Municipio</option><option value="1" class="8" >Ciudad</option>'+
+					'<option value="2" class="1" >Mixco</option>'],['<option value="" >Municipio</option><option value="2" class="2" >Quetzaltenango</option>'],
+					['<option value="" >Municipio</option><option value="3" class="3" >Huehuetenango</option>'],
+					['<option value="" >Municipio</option><option value="4" class="6">Mazatenango</option>'],
+					['<option value="" >Canton</option><option value="5" class="7" >Escuintla</option>'],
+					['<option value="" >Canton</option><option value="6" class="8" >Chiquimula </option>']];
+				/*alert(arrCanton[id-1]);*/
 	$('#select2').html( arrCanton[id-1]);
 }
-function mostrarDistrito(id){
-		var arrDistrito= [dis1=['<option value="">Seleccione Distrito</option><option value="1" class="1">Carmen</option><option value="997" class="1">Hatillo</option><option value="9" class="1">Pavas</option><option value="8" class="1">Mata Redonda</option>'],
-		                  dis2=['<option value="">Seleccione Distrito</option><option value="14" class="2">San Rafael</option><option value="998" class="2">Guachipelin</option>'],
-		                  dis3=['<option value="">Seleccione Distrito</option><option value="15" class="3">Desamparados</option><option value="19" class="3">San Antonio</option>'],
-		                  dis4=['<option value="">Seleccione Distrito</option><option value="53" class="4">Guadalupe</option>'],
-		                  dis5=['<option value="">Seleccione Distrito</option><option value="60" class="4">Santa Ana</option>'],
-		                  dis6=['<option value="">Seleccione Distrito</option><option value="71" class="5">San Isidro</option>'],
-		                  dis7=['<option value="">Seleccione Distrito</option><option value="81" class="6">San Juan</option>'],
-					dis8=['<option value="">Seleccione Distrito</option><option value="86" class="7">San Vicente</option>'],
-					dis9=['<option value="">Seleccione Distrito</option><option value="89" class="8">San Pedro</option><option value="90" class="8">Sabanilla</option>'],
-					dis10=['<option value="">Seleccione Distrito</option><option value="122" class="9">Heredia</option>'],
-					dis11=['<option value="">Seleccione Distrito</option><option value="133" class="10">Santo Domingo</option>'],
-					dis12=['<option value="">Seleccione Distrito</option><option value="158" class="11">La Asunción</option>'],
-					dis13=['<option value="">Seleccione Distrito</option><option value="159" class="12">San Joaquín</option>'],
-					dis14=['<option value="">Seleccione Distrito</option><option value="162" class="13">San Pablo</option>'],
-					dis15=['<option value="">Seleccione Distrito</option><option value="169" class="14">Alajuela</option>'],
-					dis16=['<option value="">Seleccione Distrito</option><option value="445" class="15">Jacó</option>'],
-					dis17=['<option value="">Seleccione Distrito</option><option value="447" class="16">Limón</option>'],
-					dis18=['<option value="">Seleccione Distrito</option><option value="451" class="17">Guápiles</option>'],
-					dis19=['<option value="">Seleccione Distrito</option><option value="999" class="17">Guadalupe </option>'],
-					dis20=['<option value="">Seleccione Distrito</option><option value="296" class="17">Tres Ríos </option>']
-					
-					];
-						$('#select3').html( arrDistrito[id-1]);
+function mostrarTienda(id){
+		var arrTienda= [dis1=['<option value="">Seleccione Tienda</option>'+
+		'<option value="262" class="1">Americas</option><option value="261" class="1">Pradera</option><option value="265" class="1">Montufar</option>'+
+		'<option value="267" class="1">Novicentro</option><option value="270" class="1">Megacentro</option>'+
+		'<option value="271" class="1">Asunción</option>	<option value="272" class="1">Salida al Pacifico</option>'+
+		'<option value="273" class="1">Megaseis</option><option value="274" class="1">Petapa</option>'+
+		'<option value="275" class="1">Utatlan</option><option value="277" class="1">Parroquia</option>'+
+		'<option value="278" class="1">18 Calle</option><option value="279" class="1">Aguilar Batres</option>'],
+	     dis2=['<option value="">Seleccione Tienda</option><option value="264" class="2">San Cristobal</option>'+
+		 '<option value="276" class="2">Montserrat</option><option value="282" class="2">El Naranjo</option>'],
+		 dis3=['<option value="">Seleccione Tienda</option><option value="283" class="3">Montblac</option>'],
+		 dis4=['<option value="">Seleccione Tienda</option><option value="284" class="4">Huehuetenango</option>'],
+		 dis5=['<option value="">Seleccione Tienda</option><option value="285" class="4">Mazatenango</option>'],
+		 dis6=['<option value="">Seleccione Tienda</option><option value="286" class="5">Costa Grande</option>'],
+		 dis7=['<option value="">Seleccione Tienda</option><option value="289" class="6">Chiquimula</option>'],
+		 dis8=['<option value="">Seleccione Tienda</option><option value="290" class="7">Cóban</option>']];
+		$('#select3').html( arrTienda[id-1]);
 				
 }
 /*----------------------------------Recetas----------------------------------------------*/
@@ -458,131 +369,7 @@ function obtenerCatRecetas(){
 		});
 	});				
 }
-function SugarVariedad(){
-		var data = new Array();
-		db.transaction(function (tx) {  
-			tx.executeSql('SELECT * FROM productosVariedadSugar', [], function (tx, results) {
-				var len = results.rows.length;
-				for (var i=0; i<len; i++){
-					data[i] = results.rows.item(i);
-				}
-			$('#sugarProductos').empty();
-			  $.each(data, function(index, item) {		
-				  $('#sugarProductos').append('<li><a href="javascript:mostrarProductoSugar('+item.id+')">'+item.nombre+'</a></li>');
-				  });
-				    if (  $("#sugarProductos").hasClass('ui-listview')) {
-				  $("#sugarProductos").listview("refresh");
-				  }
-				});
-			});	
-	}
-function mostrarProductoSugar(id){
-var data = new Array();
-		db.transaction(function (tx) {  
-					tx.executeSql('SELECT * FROM productosVariedadSugar WHERE id = ?', [id], function (tx, results) {
-						var len = results.rows.length;
-						for (var i=0; i<len; i++){
-							data[i] = results.rows.item(i);
-						}
-						//id INTEGER PRIMARY KEY AUTOINCREMENT, id_categoria INTEGER, nombre TEXT, categoria TEXT, marca TEXT, fabricante TEXT, pais TEXT, imagen TEXT, presentacion TEXT
-						  $('#sugarVariedadDetail h2').html(data[0].nombre);
-						  $('#sugarVariedadDetail #imgproducto img').attr("src","https://smmcr.net/fb/masxmenos/sugarfree/images/productos/"+data[0].imagen);
-						  $('#sugarVariedadDetail #NombreProductoSugar').html(data[0].nombre);
-
-					});	
-					 if ( $("#sugarVariedadDetail").hasClass('ui-listview')) {
-					$("#sugarVariedadDetail").listview("refresh");
-					}
-				});
-				 setTimeout( function() {
-	$.mobile.changePage( "#sugarVariedadDetail", {
-  changeHash: false
-});	
-$(".ui-li-thumb, .ui-listview .ui-li-icon, .ui-li-content").removeAttr("float");
-	}, 500);
-	}
-function obtenerpregunta(id){
-	var data = new Array();
-	db.transaction(function (tx) {  
-	tx.executeSql('SELECT * FROM conocersugar where id="'+id+'"', [], function (tx, results) {
-	results.rows.length;
-	//$('#scrollp1').empty();
-	switch(id){
-	case 1:
-	$('#Cuanta #scrollp1').html(results.rows.item(0).texto);
-		setTimeout( function() {
-		myScroll3 = new iScroll('contenScrollP1', {hScrollbar: false});
-	}, 500);
-	
-    break;
-	case 2:
-	$('#Que #scrollp1').html(results.rows.item(0).texto);
-		setTimeout( function() {
-		myScroll3 = new iScroll('contenScrollP2', {hScrollbar: false});
-	}, 500);
-    break;
-	case 3:
-	$('#Como #scrollp1').html(results.rows.item(0).texto);
-		setTimeout( function() {
-		myScroll3 = new iScroll('contenScrollP3', {hScrollbar: false});
-	}, 500);
-    break;
-	case 4:
-	$('#Pequennos #scrollp1').html(results.rows.item(0).texto);
-		setTimeout( function() {
-		myScroll3 = new iScroll('contenScrollP4', {hScrollbar: false});
-	}, 500);
-    break;
-	}
-		
-	});				
-	});				
-}
-function obtenerCatRecetasSugar(){
-	var data = new Array();
-	db.transaction(function (tx) {
-	tx.executeSql('SELECT * FROM categoriassugar where estado=1', [], function (tx, results) {
-		var len = results.rows.length;
-		for (var i=0; i<len; i++){
-			data[i] = results.rows.item(i);
-		}
-	$('#cocinemos #contenidoulbusqueda2 ul').empty();
-	  $.each(data, function(index, item) {	  
-		  $('#cocinemos #contenidoulbusqueda2 ul').append('<li><a href="javascript:mostraListaRecetassugar('+item.id+')">'+item.nombre+'</a></li>');
-		  });
-		    $('#cocinemos #contenidoulbusqueda2 ul').attr('data-role', 'listview');
-		
-		    if (   $('#cocinemos #contenidoulbusqueda2 ul').hasClass('ui-listview')) {
-		  $('#cocinemos #contenidoulbusqueda2 ul').listview("refresh");
-		  }
-		});
-	});				
-}
-function mostraListaRecetassugar(idcat){
-var data = new Array();			
-db.transaction(function (tx) {
-tx.executeSql('SELECT * FROM recetasSugerFree where estado=1 and categoria="'+idcat+'"', [], function (tx, results) {
-	var len = results.rows.length;
-	for (var i=0; i<len; i++){
-		data[i] = results.rows.item(i);
-	}				
-$('#SugarList').empty();
-  $.each(data, function(index, item){		
-	clases='ui-li ui-li-static ui-btn-up-a';
-	//alert(item.id);
-		$("#SugarList").append("<li onclick='agregarContenidosugar("+item.id+")' class='"+clases+"'>"+item.titulo+"</li>");			
-	 });
-	 setTimeout( function() {
-			 $("#SugarList").listview('refresh');
-			 }, 900);
-	});
-});
-setTimeout( function() {
-$.mobile.changePage("#SugarRecetasList");
-}, 500);
-}
 function obtenerGuia(){
-
 	var data = new Array();
 	db.transaction(function (tx) {  
 	tx.executeSql('SELECT * FROM guia', [], function (tx, results) {

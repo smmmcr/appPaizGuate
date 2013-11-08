@@ -5,18 +5,17 @@
 		<meta name="viewport"  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
 		<meta name="apple-mobile-web-app-capable" content="yes">		 
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		<title>App Masxmenos BETA</title>
+		<title>App Paiz</title>
 		<link rel="stylesheet" href="themes/mxm.css" />
 		<link rel="stylesheet" href="jquery.mobile.structure-1.3.1.css" />		
 		<link rel="stylesheet" media="screen and (max-width: 399px)" href="style320.css" /> 
 		<link rel="stylesheet" media="screen and (min-width: 400px)" href="style400.css" />
 		<link rel="stylesheet" media="screen and (min-width: 600px)" href="style600.css" />
 		<link rel="stylesheet"  media="screen and (min-width: 700px)" href="style700.css" />
-		<script type="text/javascript" src="phonegap.js"></script>
+		<!--<script type="text/javascript" src="phonegap.js"></script>-->
 		<script src="jquery-1.9.1.js"></script>
 		<script type="text/javascript" src="iscroll.js"></script>
 		<script src="funciones.js"></script>
-		<script src="glutenDB.js"></script>	
 		<script src="jquery.mobile-1.3.1.min.js"></script>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	</head>
@@ -43,15 +42,9 @@
 								</div><!-- /grid-b -->
 								<div class="ui-grid-a">
 									<div class="ui-block-a"><a href="#recetas"><img src='img/btnrecetas.png'></a></div>
-									<div class="ui-block-b"><a href="#sugar"><img src='img/btnSugar.png'></a></div>																	
+																								
 								</div>
-						</li>
-						<li id="etapa2" >	
-							<div class="ui-grid-a">
-								<div class="ui-block-a"><a href="#gluten"><img src='img/btnGluten.png'></a></div>	
-							</div>						
-						</li>	
-								
+						</li>										
 						</ul>
 					</div>				
 				</div>				
@@ -169,13 +162,14 @@
 				</div>
 				<div id='selectores'>
 					<select name="select1" id="select1" data-mini="true">
-							<option value="" >Provincia</option>
-							<option value="1">San José</option>
-							<option value="2">Heredia</option>
-							<option value="6">Cartago</option>
-							<option value="3">Alajuela</option>
-							<option value="4">Puntarenas</option>
-							<option value="5">Limón</option>
+							<option value="" >Departamento</option>
+							<option value="1">Guatemala</option>
+							<option value="2">Quetzaltenango</option>
+							<option value="3">Huehuetenango</option>
+							<option value="4">Suchitepequez</option>
+							<option value="5">Escuintla</option>
+							<option value="6">Chiquimula</option>
+							<option value="7">Coban</option>
 					</select>
 					<select name="select2" id="select2" data-mini="true">
 					<option value="" disabled>Canton</option>
@@ -201,10 +195,10 @@
 					<div id='btnsgeneralLlama'>
 					<a href=''  data-role="button" data-theme="a">SAC Servicio al cliente    800 - 8000 - 722</a>
 					<a href="tel:+5068008000722"><img src='img/btnllamar.png' alt='llamar'/></a>
-					<a href='' data-role="button" data-theme="a">Servicio a domicilio Jacó   2248 - 1740</a>
-					<a href="tel:+50622481740"><img src='img/btnllamar.png' alt='llamar'/></a>
-					<a href='' data-role="button" data-theme="a">Servicio a domicilio Sabana   2643 - 3611</a>
-					<a href="tel:+50626433611"><img src='img/btnllamar.png' alt='llamar'/></a>
+					<a href='' data-role="button" data-theme="a">Servicio a domicilio Megacentro (502)2485-9635</a>
+					<a href="tel:+50624859635"><img src='img/btnllamar.png' alt='llamar'/></a>
+					<a href='' data-role="button" data-theme="a">Servicio a domicilio Megacentro (502)2485-9635</a>
+					<a href="tel:+50624859635"><img src='img/btnllamar.png' alt='llamar'/></a>
 					</div>
 			</div>
 		<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
@@ -221,319 +215,102 @@
 				<div id="contenidoulbusqueda">
 				<div id="scroller">
 				<ul data-role="listview" data-inset="true" data-theme="a" data-filter="true" data-filter-placeholder="Filtrar Supermercados..." id="scrollercontacto" data-corners="false">
-					<li>
-						<h3 class="h3tel">Masxmenos Alajuela</h3>
-						<p class="ptel"><a href="tel:+50624434959">2443-4959</a> <b>ó</b> <a href="tel:+50624434975">2443-4975</a></p>
+					<li id="261">
+						<h3 class="h3tel">Pradera</h3>
+						<p class="ptel"><a href="tel:+50224859675">(502)2485-9675</a></p>
 					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos Alajuela Centro</h3>
-						<p class="ptel"><a href="tel:+50624434041">2443-4041</a></p><b>ó</b> 
-						<p class="ptel"><a href="tel:+50624417676">2441-7676</a> <b>ó</b>
-						<a href="tel:+50622434090">22434090</a></p>
+					<li id="264">
+						<h3 class="h3tel">San Cristobal</h3>
+						<p class="ptel"><a href="tel:+5024859615">(502)2485-9615</a></p>
 					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos Belen</h3>
-						<p class="ptel"><a href="tel:+50622397795">2239-7795</a></p>
+					<li id="265">
+						<h3 class="h3tel">Montufar</h3>
+						<p class="ptel"><a href="tel:+5024859512">(502)2485-9512</a>o<a href="tel:+5024859525">(502) 24859525</a></p>
 					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos Coronado</h3>
-						<p class="ptel"><a href="tel:+50622298627">2229-8627</a></p><b>ó</b> 
-						<p class="ptel"><a href="tel:+50622298456">2229-8456</a></p>
+					<li id="267">
+						<h3 class="h3tel">Novicentro</h3>
+						<p class="ptel"><a href="tel:+50224859555">(502)2485-9555</a>o<a href="tel:+50224859557">(502)24859557</a></p>
 					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos Cuesta Moras</h3>
-						<p class="ptel"><a href="tel:+50622337811">2233-7811</a></p><b>ó</b> 
-						<p class="ptel"><a href="tel:+50622553194">2255-3194</a></p>
+					<li id="270">
+						<h3 class="h3tel">Megacentro</h3>
+						<p class="ptel"><a href="tel:+50224859645">(502)2485-9645</a>o<a href="tel:+50224859631">(502)2485-9631</a>o<a href="tel:+50224859632">(502)2485-9632</a>o
+						<a href="tel:+50224859635">(Express)(502)2485-9635</a></p>
 					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos Cuesta Moras</h3>
-						<p class="ptel"><a href="tel:+50622503355">2250-3355</a></p>
+					<li id="271">
+						<h3 class="h3tel">Asunción</h3>
+						<p class="ptel"><a href="tel:+50224859565">(502)2485-9565</a>o<a href="tel:+50224859570"> (Express)(502)2485-9570</a></p>
 					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos Escazu</h3>
-						<p class="ptel"><a href="tel:+50622280954">2228-0954</a></p>
+					<li id="272">
+						<h3 class="h3tel">Salida al Pacifico</h3>
+						<p class="ptel"><a href="tel:+50224859882">(502)2485-9882</a></p>
 					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos Guadalupe</h3>
-						<p class="ptel"><a href="tel:+50622251758">2225-1758</a></p><b>ó</b> 
-						<p class="ptel"><a href="tel:+50622835341">2283-5341</a></p>
+					<li id="273">
+						<h3 class="h3tel">Megaseis</h3>
+						<p class="ptel"><a href="tel:+5022485965">(502)2485-9655</a></p>
 					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos Guapiles</h3>
-						<p class="ptel"><a href="tel:+50627103146">2710-3146</a></p>
+					<li id="274">
+						<h3 class="h3tel">Petapa</h3>
+						<p class="ptel"><a href="tel:+50224859625">(502)2485-9625</a></p>
 					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos Heredia</h3>
-						<p class="ptel"><a href="tel:+50622610007">2261-0007</a></p>
+					<li id="275">
+						<h3 class="h3tel">Utatlan</h3>
+						<p class="ptel"><a href="tel:+50224859500">(502)2485-9500</a>o<a href="tel:+50224859502">(502)2485-9502</a>o<a href="tel:+50224859610">(Express)(502)2485-9610</a></p>
 					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos Jacó</h3>
-						<p class="ptel"><a href="tel:+50626433027">2643-3027</a></p><b>ó</b> 
-						<p class="ptel"><a href="tel:+50626432528">2643-2528</a></p>
-						<p class="ptel"><a href="tel:+50626433611">(Express) 2643-3611</a></p>
+					<li id="276">
+						<h3 class="h3tel">Montserrat</h3>
+						<p class="ptel"><a href="tel:+50224859715">(502)2485-9715</a>o<a href="tel:+50224859710">(Express)(502)2485-9710</a></p>
 					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos La Granja</h3>
-						<p class="ptel"><a href="tel:+50622250636">2225-0636</a></p>
+					<li id="277">
+						<h3 class="h3tel">Parroquia</h3>
+						<p class="ptel"><a href="tel:+50224859575">(502)2485-9575</a>o<a href="tel:+50224859577">(Express)(502)2485-9577</a></p>
 					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos Las Flores</h3>
-						<p class="ptel"><a href="tel:+50622373215">2237-3215</a></p>
+					<li id="278">
+						<h3 class="h3tel">18 Calle</h3>
+						<p class="ptel"><a href="tel:+50224859695">(502)2485-9695</a></p>
 					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos Limón</h3>
-						<p class="ptel"><a href="tel:+50627981985">2798-1985</a></p><b>ó</b> 
-						<p class="ptel"><a href="tel:+50627980070">2798-0070</a></p>
+					<li id="279">
+						<h3 class="h3tel">Aguilar Batres</h3>
+						<p class="ptel"><a href="tel:+50224859525">(502)2485-9525</a></p>
 					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos Rohrmoser</h3>
-						<p class="ptel"><a href="tel:+50622313815">2231-3815</a></p><b>ó</b> 
-						<p class="ptel"><a href="tel:+50622313936">2231-3936</a></p>
+					<li id="282">
+						<h3 class="h3tel">El Naranjo</h3>
+						<p class="ptel"><a href="tel:+50224196161">(502)2419-6161</a>o
+						<a href="tel:+50224196162">(502)2419-6162</a>o
+						<a href="tel:+50224196262">(Express)(502)24196262</a></p>
 					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos Sabana</h3>
-						<p class="ptel"><a href="tel:+50622480968">2248-0968</a></p>
+					<li id="283">
+						<h3 class="h3tel">Montblac</h3>
+						<p class="ptel"><a href="tel:+50277654895">(502)7765-4895</a></p>
 					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos Sabanilla</h3>
-						<p class="ptel"><a href="tel:+50622805106">2280-5106</a></p><b>ó</b> 
-						<p class="ptel"><a href="tel:+50622805221">2280-5221</a></p><b>ó</b> 
-						<p class="ptel"><a href="tel:+50622835761">2283-5761</a></p>
+					<li id="284">
+						<h3 class="h3tel">Huehuetenango</h3>
+						<p class="ptel"><a href="tel:+50277682340">(502)7768-2340</a>o
+						<a href="tel:+50277640375">(502)7764-0375 </a>o
+						<a href="tel:+50277640376">(502)7764-0376</a>o
+						<a href="tel:+50277682345">(502)7768-2345</a></p>
 					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos San Antonio</h3>
-						<p class="ptel"><a href="tel:+50622190137">2219-0137</a></p>
+					<li id="285">
+						<h3 class="h3tel">Mazatenango</h3>
+						<p class="ptel"><a href="tel:+50278722108">(502)7872-2108</a>o
+						<a href="tel:+50278720699">(Express)(502)7872-0699</a></p>
 					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos San Gerardo</h3>
-						<p class="ptel"><a href="tel:+50622242140">2224-2140</a></p>
+					<li id="286">
+						<h3 class="h3tel">Costa Grande</h3>
+						<p class="ptel"><a href="tel:+50278897209">(502)7889-7209</a>o
+						<a href="tel:+50278893087">(502)7889-3087</a></p>
 					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos San Pablo</h3>
-						<p class="ptel"><a href="tel:+50622607163">2260-7163</a></p><b>ó</b> 
-						<p class="ptel"><a href="tel:+50622607024">2260-7024</a></p>
+					<li id="289">
+						<h3 class="h3tel">Chiquimula</h3>
+						<p class="ptel"><a href="tel:+50279426235">(502)7942-6235</a></p>
 					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos Santa Ana</h3>
-						<p class="ptel"><a href="tel:+50625820211">2582-0211</a></p><b>ó</b> 
-						<p class="ptel"><a href="tel:+50625820213">2582-0213</a></p><b>ó</b> 
-						<p class="ptel"><a href="tel:+50625820215">2582-0215</a></p><b>ó</b> 
-						<p class="ptel"><a href="tel:+50625820217">2582-0217</a></p>
-					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos Santo Domingo</h3>
-						<p class="ptel"><a href="tel:+50622448180">2244-8180</a></p>
-					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos Tibas</h3>
-						<p class="ptel"><a href="tel:+50622350535">2235-0535</a></p><b>ó</b>
-						<p class="ptel"><a href="tel:+50622972838"> 2297-2838</a></p>
-					</li>
-					<li>
-						<h3 class="h3tel">Masxmenos Tres Ríos</h3>
-						<p class="ptel"><a href="tel:+50622797453">2279-7453</a></p>
+					<li id="290">
+						<h3 class="h3tel">Cóban</h3>
+						<p class="ptel"><a href="tel:+50279514554">(502)7951-4554</a>o<a href="tel:+50279514554">(Express)(502)7951-4554</a> Servicio al Cliente
+						<a href="tel:+50279514550">(502)7951-4550</a><a href="tel:+5021951-4547">(502)1951-4547</a></p>
 					</li>
 					<li class="clear"></li>
 				</ul>
 				</div>
-				</div>			
-			</div>
-		<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-		</div>
-		</div>
-		<div id='gluten' class="gluten" data-role="page" data-theme="a">
-			<div data-role="header" data-position="inline">
-				<img src="img/logohedermasxmenos.png">
-			</div>
-				<div class="headerGuia" data-position="inline">
-				<a   href="#home" class="retro" data-iconpos="left"   ><img src="img/retro.png"></a></a><h2>Gluten Free</h2>
-				</div>			
-			<div data-role="content" data-theme="a" >	
-				<div id="contenidoulbusqueda2" style="width: 100%;position: relative;">
-				<div data-role="controlgroup">
-					<a href="#glutenRecetasCat" data-role="button" data-icon="arrow-r" data-iconpos="right">Recetas Libres de Gluten</a>
-					<a href="#gluten2" data-role="button" data-icon="arrow-r" data-iconpos="right">Primeros pasos con un Celíaco</a>
-					<a href="#gluten3" data-role="button" data-icon="arrow-r" data-iconpos="right">Variedad en Gluten Free</a>
-				</div>
-				<img src="img/logo_celiacos.png" class="logo_celiacos">
-				</div>			
-			</div>
-		<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-		</div>
-		</div>
-		<div id='glutenRecetasCat' class="gluten" data-role="page" data-theme="a">
-		<div data-role="header" data-position="inline">
-			</a><img src="img/logohedermasxmenos.png">
-		</div>
-				<div class="headerGuia" data-position="inline">
-			<a  href="#" data-rel="back" data-iconpos="left"   ><img src="img/retro.png"></a><h2>Recetas Gluten Free</h2>
-				</div>			
-			<div data-role="content" >	
-				<div id="contenidoulbusqueda2" style="width: 100%;position: relative;">
-				<ul data-role="listview" data-filter="true" data-filter-placeholder="Filtrar Categorias..." data-inset="true">
-
-				</ul>
-				</div>			
-			</div>
-		<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-		</div>
-		</div>
-		<div id='glutenRecetasList' class="gluten" data-role="page" data-theme="a">
-		<div data-role="header" data-position="inline">
-				<img src="img/logohedermasxmenos.png">
-			</div>
-				<div class="headerGuia" data-position="inline">
-				<a  href="#" data-rel="back" data-iconpos="left"   ><img src="img/retro.png"></a><h2>Recetas Gluten Free</h2>
-				</div>			
-			<div data-role="content" data-theme="a">	
-				<div id="listaRecetasXCat" style="width: 100%;position: relative;">
-				<ul data-role="listview" data-filter="true" data-filter-placeholder="Filtrar Recetas..." data-inset="true" data-divider-theme="a">
-					<li data-role="list-divider">NOMBRE CATEGORIA</li>
-					<li><a href="#glutenRecetasDetail">Galletitas</a></li>
-					<li><a href="#glutenRecetasDetail">Panes</a></li>
-					<li><a href="#glutenRecetasDetail">Pastas y Masas Básicas</a></li>
-					<li><a href="#glutenRecetasDetail">Entradas y Aderezos Caseros</a></li>
-					<li><a href="#glutenRecetasDetail">Platos Principales</a></li>
-					<li><a href="#glutenRecetasDetail">Ensaladas</a></li>
-					<li><a href="#glutenRecetasDetail">Salsas y Guariniciones</a></li>
-					<li><a href="#glutenRecetasDetail">Salsas</a></li>
-					<li><a href="#glutenRecetasDetail">Sopas y Caldos</a></li>
-					<li><a href="#glutenRecetasDetail">Postres</a></li>
-				</ul>
-				</div>			
-			</div>
-		<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-		</div>
-		</div>
-		<div id='glutenRecetasDetail' class="gluten" data-role="page" data-theme="a">
-		<div data-role="header" data-position="inline">
-				<img src="img/logohedermasxmenos.png">
-			</div>
-				<div class="headerGuia" data-position="inline">
-			<a  href="#" data-rel="back" data-iconpos="left"   ><img src="img/retro.png"></a>	<h2>Recetas Gluten Free</h2>
-				</div>			
-			<div data-role="content">	
-				<div id="recetafinalGluten" >
-					<div id="titulorecetaprincipal"></div>
-					<div id="contenidorecetaGluten">
-					<div id="scrollergluten"  data-theme="a" >
-						<ul  id="vistaReceta">
-					
-					
-						</ul>
-					</div>
-					</div>
-				</div>
-							
-			</div>
-		<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-		</div>
-		</div>
-		<div id='gluten2' class="gluten" data-role="page" data-theme="a">
-			<div data-role="header" data-position="inline">
-				<img src="img/logohedermasxmenos.png">
-			</div>
-				<div class="headerGuia" data-position="inline">
-			<a  href="#" data-rel="back" data-iconpos="left"   ><img src="img/retro.png"></a><h3>Primeros pasos con un Celíaco</h3>
-				</div>	
-			<div data-role="content" >	
-				<div id="contenidoulbusqueda2" style="width: 100%;position: relative;">
-					<ul data-role="listview" data-inset="true" id="pasos_list">
-					</ul>
-				</div>			
-			</div>
-		<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-		</div>
-		</div>
-		<div id='glutenPasos' class="gluten" data-role="page" data-theme="a">
-			<div data-role="header" data-position="inline">
-				<img src="img/logohedermasxmenos.png">
-			</div>
-				<div class="headerGuia" data-position="inline">
-			<a  href="#" data-rel="back" data-iconpos="left"   ><img src="img/retro.png"></a>	<h3 id="titulo">Primeros pasos con un Celíaco</h3>
-				</div>	
-			<div data-role="content" id="contenedorpasos">	
-				<div id="Scrollerpasos" >
-				<div id="scrollerPasos1" >
-						<div id="scroller" >
-							<ul data-role="listview"   data-theme="a"  data-inset="true" id="contPasos" data-corners="false">
-							</ul>
-						</div>		
-				</div>			
-				</div>			
-			</div>
-		<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-		</div>
-		</div>
-		<div id='gluten3' class="gluten" data-role="page" data-theme="a">
-			<div data-role="header" data-position="inline">
-				<img src="img/logohedermasxmenos.png">
-			</div>
-				<div class="headerGuia" data-position="inline">
-	<a  href="#" data-rel="back" data-iconpos="left"   ><img src="img/retro.png"></a>		<h2>Variedad Gluten Free</h2>
-				</div>	
-			<div data-role="content" >	
-				<div id="contenidoulbusqueda2" style="width: 100%;position: relative;">
-				<ul data-role="listview" data-filter="true" data-filter-placeholder="Filtrar Categorias..." data-inset="true" id="gfcCategorias" data-divider-theme="a">
-				</ul>
-				</div>			
-			</div>
-		<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-		</div>
-		</div>
-		<div id='glutenVariedadList' class="gluten" data-role="page" data-theme="a">
-			<div data-role="header" data-position="inline">
-				<img src="img/logohedermasxmenos.png">
-			</div>
-				<div class="headerGuia" data-position="inline">
-			<a  href="#" data-rel="back" data-iconpos="left"   ><img src="img/retro.png"></a><h2>Variedad Gluten Free</h2>
-				</div>	
-			<div data-role="content" >	
-				<div id="contenidoulbusqueda2" style="width: 100%;position: relative;">
-				<ul data-role="listview" data-filter="true" data-filter-placeholder="Filtrar Productos..." data-inset="true" id="gfcProductos" data-divider-theme="a">
-				</ul>
-				</div>			
-			</div>
-		<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-		</div>
-		</div>
-		<div id='glutenVariedadDetail' class="gluten" data-role="page" data-theme="a">
-			<div data-role="header" data-position="inline">
-				<img src="img/logohedermasxmenos.png">
-			</div>
-				<div class="headerGuia" data-position="inline">
-			<a  href="#" data-rel="back" data-iconpos="left"   ><img src="img/retro.png"></a>	<h2>Variedad Gluten Free</h2>
-				</div>	
-			<div data-role="content" >	
-				<div id="contenidoDetail" style="width: 100%;position: relative;">
-					<div id="wrapper_gfpro">
-							<div id="scroller">	
-					<ul data-role="listview"  data-inset="true" id="gfcProductosdetail" data-divider-theme="a">				
-						
-						<li id="imgproducto">
-							<img src="http://movilmultimediasa.com/Celiacos/compras/images/fotosproductos/84b4c69d.jpg"  alt="imgproducto" id="imgpro" />
-						</li>														
-									<li class="listatituprincipal" id="descrip" data-role="list-divider"><strong>Descripción: </strong></li>
-									<li id="GFD_categoria">Jaleas y mermeladas</li>
-									<li id="GFD_marca">Marca: POST</li>
-									<li id="GFD_fabricante">Fabricante: FELIPE MOTTA CR S.A.</li>					
-									<li class="listatituprincipal" id="listasuperdisp"	data-role="list-divider" >Supermercados en los que está disponible:</li>
-									<li class="listatituprincipal" id="listasuperdisp2"	data-theme="a" >Lista de supermercados
-									<ul data-role="listview" data-theme="a" id="otro">
-										<li><a href="javascript:mostrarcontenidomapa(60);">Santa Ana</a></li>
-										<li><a href="javascript:mostrarcontenidomapa(158);">Belén</a></li>
-										<li><a href="">Guachipelín</a></li>
-										<li><a href="javascript:mostrarcontenidomapa(8);">Sabana</a></li>
-										<li><a href="javascript:mostrarcontenidomapa(133);">Santo Domingo</a></li>
-										<li><a href="javascript:mostrarcontenidomapa(169);">Alajuela</a></li>
-										<li><a href="javascript:mostrarcontenidomapa(86);">Lincoln</a></li>
-										<li><a href="">Cartago</a></li>
-										<li data-icon="arrow-l" data-theme="b" data-iconpos="left"><a href="#" data-rel="back"  style="text-align: center;"> Regresar</a></li>										
-									</ul>
-									</li>
-					</ul>
-							</div>			
-						</div>	
 				</div>			
 			</div>
 		<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
@@ -568,289 +345,11 @@
 			<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
 			</div>
 		</div>
-		<div id='sugar' class="sugar" data-role="page" recetaSelecsugar>
-				<div data-role="header" data-position="inline">
-					<img src="img/logohedermasxmenos.png">
-				</div>
-					<div class="headerGuia" data-position="inline"><a   href="#home" class="retro" data-iconpos="left"   ><img src="img/retro.png" alt="retro"/></a></div>			
-				<div data-role="content" >	
-					<div id="contenidoMenuSugar" style="width: 100%;position: relative;">
-					<div data-role="controlgroup">
-						<a href="#aprendamos"  ><img src="img/btnaprendamos.png" alt="bonton_que_sugar"/></a>
-						<a href="#cocinemos"  ><img src="img/btncocinemos.png" alt="bonton_que_sugar"/></a>
-						<a href="#variedadsugar"  ><img src="img/btnvariedadsugar.png" alt="bonton_que_sugar"/></a>
-					
-					</div>
-					</div>			
-				</div>
-			<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-			</div>
-		</div>
-		<div id='aprendamos' class="sugar" data-role="page" data-theme="a">
-			<div data-role="header" data-position="inline">
-				<img src="img/logohedermasxmenos.png">
-			</div>
-				<div class="headerGuia" data-position="inline">
-			<a  href="#" data-rel="back" data-theme="a" data-iconpos="left"   ><img src="img/retro.png"></a><h2>Sugar Free</h2>
-				</div>			
-			<div data-role="content">	
-				<div id="contentAprender" style="width: 100%;position: relative;">
-				<div data-role="controlgroup">
-					<a href="#Cuanta" data-role="button" data-icon="arrow-r" data-iconpos="right">¿Cuánta Azúcar es mucha Azúcar?</a>
-					<a href="#Que" data-role="button" data-icon="arrow-r" data-iconpos="right">¿Qué deben comer los diabéticos?</a>
-					<a href="#Como" data-role="button" data-icon="arrow-r" data-iconpos="right">¿Cómo sustituyo el azúcar en mis recetas?</a>
-					<a href="#Pequennos" data-role="button" data-icon="arrow-r" data-iconpos="right">Pequeños cambios para una vida saludable</a>
-				</div>
-				<img src="img/logoSugarFree.png" class="logo_sugar">
-				</div>			
-			</div>
-		<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-		</div>
-		</div>
-		<div id='Cuanta' class="sugar" data-role="page" data-theme="a">
-			<div data-role="header" data-position="inline">
-				<img src="img/logohedermasxmenos.png">
-			</div>
-				<div class="headerGuia" data-position="inline">
-			<a  href="#" data-rel="back" data-iconpos="left"   ><img src="img/retro.png"></a>	<h2>¿Cuánta Azúcar es mucha Azúcar?</h2>
-				</div>			
-			<div data-role="content" >	
-				<div id="contentAprender" style="width: 100%;position: relative;">
-				<div data-role="controlgroup">
-					<div class="contenScrollP1">
-						<div id="contenScrollP1">
-							<div id="scrollp1">							
-							
-							
-							</div>
-						</div>
-					</div>
-				</div>
-				<img src="img/logoSugarFree.png" class="logo_sugar">
-				</div>			
-			</div>
-		<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-		</div>
-		</div>
-		<div id='Que' class="sugar" data-role="page" data-theme="a">
-			<div data-role="header" data-position="inline">
-				<img src="img/logohedermasxmenos.png">
-			</div>
-				<div class="headerGuia" data-position="inline">
-		<a  href="#" data-rel="back" data-iconpos="left"   ><img src="img/retro.png"></a>	<h2>¿Qué deben comer los diabéticos?</h2>
-				</div>			
-			<div data-role="content" >	
-				<div id="contentAprender" style="width: 100%;position: relative;">
-				<div data-role="controlgroup">
-					<div class="contenScrollP2">
-						<div id="contenScrollP2">
-							<div id="scrollp1">							
-							
-							
-							</div>
-						</div>
-					</div>
-				</div>
-				<img src="img/logoSugarFree.png" class="logo_sugar">
-				</div>			
-			</div>
-		<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-		</div>
-		</div>
-		<div id='Como' class="sugar" data-role="page" data-theme="a">
-			<div data-role="header" data-position="inline">
-				<img src="img/logohedermasxmenos.png">
-			</div>
-				<div class="headerGuia" data-position="inline">
-			<a  href="#" data-rel="back" data-iconpos="left"   ><img src="img/retro.png"></a><h2>¿Cómo sustituyo el azúcar en mis recetas?</h2>
-				</div>			
-			<div data-role="content" >	
-				<div id="contentAprender" style="width: 100%;position: relative;">
-				<div data-role="controlgroup">
-					<div class="contenScrollP3">
-						<div id="contenScrollP3">
-							<div id="scrollp1">							
-							
-							
-							</div>
-						</div>
-					</div>
-				</div>
-				<img src="img/logoSugarFree.png" class="logo_sugar">
-				</div>			
-			</div>
-		<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-		</div>
-		</div>
-		<div id='Pequennos' class="sugar" data-role="page" data-theme="a">
-			<div data-role="header" data-position="inline">
-				<img src="img/logohedermasxmenos.png">
-			</div>
-				<div class="headerGuia" data-position="inline">
-	<a  href="#" data-rel="back" data-iconpos="left"   ><img src="img/retro.png"></a>	<h2>Pequeños cambios para una vida saludable</h2>
-				</div>			
-			<div data-role="content" >	
-				<div id="contentAprender" style="width: 100%;position: relative;">
-				<div data-role="controlgroup">
-					<div class="contenScrollP4">
-						<div id="contenScrollP4">
-							<div id="scrollp1">							
-							
-							
-							</div>
-						</div>
-					</div>
-				</div>
-				<img src="img/logoSugarFree.png" class="logo_sugar">
-				</div>			
-			</div>
-		<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-		</div>
-		</div>
-		<div id='cocinemos' class="sugar" data-role="page" data-theme="a">
-		<div data-role="header" data-position="inline">
-				<img src="img/logohedermasxmenos.png">
-			</div>
-				<div class="headerGuia" data-position="inline">
-			<a  href="#" data-rel="back" data-iconpos="left"   ><img src="img/retro.png"></a>	<h2>Cocinemos Juntos</h2>
-				</div>			
-			<div data-role="content" >	
-				<div id="contenidoulbusqueda2" style="width: 100%;position: relative;">
-				<ul data-role="listview"  data-inset="true">
-
-				</ul>
-				</div>
-			<img src="img/logoSugarFree.png" class="logo_celiacos">				
-			</div>
-		<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-		</div>
-		</div>
-		<div id='SugarRecetasList' class="sugar" data-role="page" data-theme="a">
-		<div data-role="header" data-position="inline">
-				<img src="img/logohedermasxmenos.png">
-			</div>
-				<div class="headerGuia" data-position="inline">
-		<a  href="#" data-rel="back" data-iconpos="left"   ><img src="img/retro.png"></a>	<h2>Recetas Gluten Free</h2>
-				</div>			
-			<div data-role="content" >	
-				<div id="listaRecetasXCat" style="width: 100%;position: relative;">
-				<ul data-role="listview" id="SugarList" data-filter="true" data-filter-placeholder="Filtrar Recetas..." data-inset="true" data-divider-theme="a">
-					
-				</ul>
-				</div>			
-			</div>
-		<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-		</div>
-		</div>
-		<div id='recetaSelecsugar' class="sugar" data-role="page" data-theme="a">
-			<div data-role="header" data-position="inline">
-				<img src="img/logohedermasxmenos.png">
-			</div>
-				<div class="headerGuia" data-position="inline">
-		<a  href="#" data-rel="back" data-iconpos="left"   ><img src="img/retro.png"></a>	<h3>Recetas</h3>
-				</div>
-			<div data-role="content" >				
-				<div id="recetafinal">
-					<div id="tituloreceta"></div>
-					<div id="contenidorecetaSugar">
-					<div id="scroller">
-						<ul data-role="listview"   data-theme="a"  data-inset="true" id="scrolle1" data-corners="false">
-						
-						</ul>
-					</div>
-					</div>
-				</div>
-			</div>
-		<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-		</div>
-		</div>
-		<div id='variedadsugar' class="sugar" data-role="page" data-theme="a">
-			<div data-role="header" data-position="inline">
-				<img src="img/logohedermasxmenos.png">
-			</div>
-				<div class="headerGuia" data-position="inline">
-	<a  href="#" data-rel="back" data-iconpos="left"   ><img src="img/retro.png"></a>	<h2>Variedad Sugar Free</h2>
-				</div>	
-			<div data-role="content" >	
-				<div id="contenidoProductoVarieda" style="width: 100%;position: relative;">
-					<div id="ProductosSugar">
-						<div id="ScrollProductosSugar">
-							<ul data-role="listview" data-filter="true" data-filter-placeholder="Filtrar Categorias..." data-inset="true" id="sugarProductos" data-divider-theme="a">
-							</ul>
-						</div>			
-					</div>			
-				</div>			
-			</div>
-		<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-		</div>
-		</div>
-		<div id='sugarVariedadDetail' class="sugar" data-role="page" data-theme="a">
-			<div data-role="header" data-position="inline">
-				<img src="img/logohedermasxmenos.png">
-			</div>
-				<div class="headerGuia" data-position="inline">
-	<a  href="#" data-rel="back" data-iconpos="left"   ><img src="img/retro.png"></a><h2>Variedad Sugar Free</h2>
-				</div>	
-			<div data-role="content" >	
-				<div id="contenidoDetail" style="width: 100%;position: relative;">
-					<div id="wrapper_gfpro">
-							<div id="scroller">	
-					<ul data-role="listview"  data-inset="true" id="gfcProductosdetail" data-divider-theme="a">				
-						
-						<li id="imgproducto">
-							<img src="http://movilmultimediasa.com/Celiacos/compras/images/fotosproductos/84b4c69d.jpg"  alt="imgproducto" id="imgpro" />
-						</li>														
-						<li class="listatituprincipal" id="descrip" data-role="list-divider"><strong>Producto: </strong></li>
-						<li id="NombreProductoSugar">Jaleas y mermeladas</li>
-						<li class="listatituprincipal" id="listasuperdisp"	data-role="list-divider" >Supermercados en los que está disponible:</li>
-						<li class="listatituprincipal" id="listasuperdisp2"	data-theme="a" >Lista de supermercados
-						<ul data-role="listview" data-theme="a" id="sugar">
-							<li><a href="javascript:mostrarcontenidomapa(60);">Santa Ana</a></li>
-							<li><a href="javascript:mostrarcontenidomapa(158);">Belén</a></li>
-							<li><a href="">Guachipelín</a></li>
-							<li><a href="javascript:mostrarcontenidomapa(8);">Sabana</a></li>
-							<li><a href="javascript:mostrarcontenidomapa(133);">Santo Domingo</a></li>
-							<li><a href="javascript:mostrarcontenidomapa(169);">Alajuela</a></li>
-							<li><a href="javascript:mostrarcontenidomapa(86);">Lincoln</a></li>
-							<li><a href="">Cartago</a></li>
-							<li data-icon="arrow-l" data-theme="b" data-iconpos="left"><a href="#" data-rel="back"  style="text-align: center;"> Regresar</a></li>										
-						</ul>
-						</li>
-					</ul>
-							</div>			
-						</div>	
-				</div>			
-			</div>
-			<div data-role="footer" class="footer" data-position="fixed" data-tap-toggle="false">
-		</div>
-		</div>
 	</body>
 	<script>
-/*	function next(){
-		$("#scrollMenu").animate().css("-webkit-transform", "translate(-604px, 0px) scale(1) translateZ(0px)");
-	}
-	function prev(){
-		$("#scrollMenu").animate().css("-webkit-transform","translate(0px, 0px) scale(1) translateZ(0px)");
-	}*/
-/*$( "#home" ).on( "pagebeforeshow", function( event ) {
-		//$( "#menuP" ).css("height",$( "#home" ).css("height"));
-		$( "#etapa1" ).css("height",$( "#home" ).css("height"));
-		$( "#etapa2" ).css("height",$( "#home" ).css("height"));
-		});*/
 $( "#recetas" ).on( "pagebeforeshow", function( event ) {
 	obtenerCatRecetas();
 	//mostrarlista(14);
-});
-
-$( "#variedadsugar" ).on( "pagebeforecreate", function( event ) {
-	 SugarVariedad();
-	 setTimeout( function() {
-		myScroll3 = new iScroll('ProductosSugar', {hScrollbar: false});
-	}, 500);	
-});
-$( "#cocinemos" ).on( "pagebeforeshow", function( event ) {
-obtenerCatRecetasSugar();
-	
 });
 $( "#recetaSelec" ).on( "pagebeforeshow", function( event ) {
 footer=$(".footer").height();
@@ -865,70 +364,6 @@ $("#recetaSelec #contenidoreceta").css("height",altoreceta);
 	setTimeout( function() {
 		myScroll3 = new iScroll('contenidoreceta', {hScrollbar: false});
 	}, 900);	
-});
-$( "#recetaSelecsugar" ).on( "pagebeforeshow", function( event ) {
-footer=$(".footer").height();
-ventana=$(window).height();
-$("#recetaSelecsugar #recetafinal").css("height",(ventana)-(footer+(ventana/3)));
-altoreceta=$("#recetafinal").height();
-altoimg=$("#recetafinal img").height();
-altoreg=$("#regresar").height();
-altotit=$("#titulorec1").height();
-$("#recetaSelecsugar #contenidorecetaSugar").css("height",altoreceta);
-	setTimeout( function() {
-		myScroll3 = new iScroll('contenidorecetaSugar', {hScrollbar: false});
-	}, 500);	
-});
-$( "#Cuanta" ).on( "pagebeforeshow", function( event ) {
-	obtenerpregunta(1);	
-});
-$( "#Que" ).on( "pagebeforeshow", function( event ) {
-	obtenerpregunta(2);	
-});
-$( "#Como" ).on( "pagebeforeshow", function( event ) {
-	obtenerpregunta(3);	
-});
-$( "#Pequennos" ).on( "pagebeforeshow", function( event ) {
-	obtenerpregunta(4);	
-});
-/*-------------------------------------------gluten----------------------------------------*/
-$( "#gluten3" ).on( "pagebeforecreate", function( event ) {
-	 GlutenVariedad();
-});
-$( "#gluten2" ).on( "pagebeforecreate", function( event ) {
-	GlutenPasos();
-});
-$( "#gluten2" ).on( "pagebeforecreate", function( event ) {
-	GlutenPasos();
-});
-$( "#glutenRecetasDetail" ).on( "pagebeforeshow", function( event ) {
-	setTimeout( function() {
-			$('#vistaReceta').listview('refresh');
-	}, 500);
-});
-$( "#glutenRecetasCat" ).on( "pagebeforeshow", function( event ) {
-obtenerCatRecetasGluten();
-});
-$( "#glutenRecetasDetail" ).on( "pagebeforeshow", function( event ) {
-	setTimeout( function() {
-		myScroll3 = new iScroll('contenidorecetaGluten', {hScrollbar: false});
-	}, 500);
-});
-$( "#glutenPasos" ).on( "pagebeforeshow", function( event ) {
-setTimeout( function() {
- $("#contPasos ul").attr('data-role', 'listview');
- $("#contPasos ul").attr('class', 'listavista');
- //$(".listavista").listview('refresh', true);
-   if ( $(".listavista").hasClass('ui-listview')) {
-   // $("#guia #thelist").listview('refresh');
-   
-   $(".listavista").listview('refresh', true);
-    } 
- 
- }, 500);
- setTimeout( function() {
-		myScroll3 = new iScroll('scrollerPasos1', {hScrollbar: false});
-	}, 500);
 });
 /*--------------------------Guia-----------------------------------------------------------*/
 $( "#guia" ).on( "pagebeforeshow", function( event ) {
@@ -951,18 +386,12 @@ $("#busquedaRapidaContacto #contenidoulbusqueda").css("height",(ventana)-(footer
 		myScroll3 = new iScroll('contenidoulbusqueda', {hScrollbar: false});
 	}, 500);
 });		
-$( "#glutenVariedadDetail" ).on( "pagebeforeshow", function( event ) {
-setTimeout( function() {
-	myScroll3 = new iScroll('wrapper_gfpro', {hScrollbar: false});
-}, 500);
-});
-$("#recetaSelec,#glutenPasos,#glutenVariedadDetail,#glutenRecetasDetail,#recetaSelecsugar,#listaRecetas ul,#recetafinal").on( "pagebeforehide", function( event ) {
+$("#recetaSelec,#glutenPasos,#recetaSelecsugar,#listaRecetas ul,#recetafinal").on( "pagebeforehide", function( event ) {
 myScroll3.destroy();
 myScroll3 = null;
 });
 /*---------------------------------------guia-------------------------------*/
 $("#guia").on('pagecreate', function(){
-
  $.fn.disableSelection = function() {
         return this
                  .attr('unselectable', 'on')
@@ -979,7 +408,7 @@ $("#supermercados").on( "pagebeforeshow", function( event ) {
 	});
 	$("#select2").bind( "change", function() {
 		idcat=$("#select2").val();
-		mostrarDistrito(idcat);	
+		mostrarTienda(idcat);	
 		$('#select3').selectmenu('refresh', true);		
 	});
 	$("#select3").bind( "change", function() {

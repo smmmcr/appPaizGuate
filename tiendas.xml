@@ -1,292 +1,234 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <tiendas>
-<informacion id="8">
-<tienda id="183">
-<nombre>Masxmenos Sabana</nombre>
-<direccion>FRENTE AL HOTEL COROBICI</direccion>
-<lat>9.940361</lat><longi>-84.097939</longi>
-<horario>Lunes-Jueves 8:00 a.m. a 12:00 p.m. , Viernes-Sábado 8:00 a.m. a 12:00 p.m. ,Domingo 8:00 a.m. a 9:00 p.m.</horario>
-<telefono><a href="tel:+50622480968">2248-0968</a>o<a href="tel:+50622481396">2248-1396</a></telefono>
-<imagenes>iconopagoluz,iconoExpress,iconoOptico,iconocafe</imagenes>
+<informacion id="262">
+<tienda id="262">
+<nombre>Americas</nombre>
+<direccion>11 Calle 15-01, zona 13</direccion>
+<lat>14.586626</lat><longi>-90.521539</longi>
+<horario>Lunes,Miercoles, Jueves y Viernes 7:00am a 9:00pm, Martes a Sábado 7:00am a 8:30pm, Domingo 8:00am a 8:30pm</horario>
+<telefono><a href="tel:+50224859595">(502)2485-9595</a></telefono>
+<imagenes>icofarmacia.png,iconopagoluz.png,iconoExpress.png,iconoRemesa.png,iconocafe.png,iconocajero.png</imagenes>
 </tienda>
 </informacion>
-<informacion id="71">
-<tienda id="185">
-<nombre>Masxmenos Coronado</nombre>
-<direccion>300mts ESTE DE LA CLÍNICA DE CORONADO</direccion>
-<lat>9.977642</lat><longi>-84.010391</longi>
-<horario>Lunes a Sábado: 7:00am a 12:00pm, Domingo: 7:00am a 9:00pm</horario>
-<telefono><a href="tel:+50622298627">2229-8627</a> <a href="tel:+50622298456">/ 2229-8456</a></telefono>
-<imagenes>iconopagoluz</imagenes>
+<informacion id="261">
+<tienda id="261">
+<nombre>Pradera</nombre>
+<direccion>20 Calle 25-85, zona 10</direccion>
+<lat>14.579908</lat><longi>-90.495946</longi>
+<horario>Lunes a Domingo 8:00am a 9:00pm</horario>
+<telefono><a href="tel:+50224859675">(502)2485-9675</a></telefono>
+<imagenes>icofarmacia.png,iconoExpress.png,iconoRemesa.png,iconocafe.png,iconocajero.png</imagenes>
 </tienda>
 </informacion>
-<informacion id="133">
-<tienda id="186">
-<nombre>Masxmenos Santo Domingo</nombre>
-<direccion>De la Basílica 300mts norte y 200mts este, Santo Domingo de Heredia</direccion>
-<lat>10.013482</lat><longi>-84.079742</longi>
-<horario>Lunes-Jueves 7:00 a.m. a 12:00 p.m. , Viernes-Sábado 7:00 a.m. a 12:00 p.m. , Domingo 7:00 a.m. a 10:00 p.m.</horario>
-<telefono><a href="tel:+50622448180">2244-8180</a>/82/83</telefono>
-<imagenes>iconofarmacia,iconopagoluz</imagenes>
-</tienda>
-</informacion>
-<informacion id="122">
-<tienda id="187"><nombre>Masxmenos Heredia</nombre>
-<direccion>Costado oeste del Mercado Central, 50mts oeste frente a panadería Leandro en Heredia.</direccion>
-<lat>9.996513</lat><longi>-84.118924</longi>
-<horario>Lunes-Jueves 6:00 a.m. a 12:00 p.m. , Viernes-Sábado 6:00 a.m. a 12:00 p.m. , Domingo 6:00 a.m. a 10:00 p.m.</horario>
-<telefono><a href="tel:+50622610007">22610007</a>//06//08</telefono>
-<imagenes>iconopagoluz,iconocajero</imagenes>
-</tienda>
-</informacion>
-<informacion id="445">
-<tienda id="188"><nombre>Masxmenos Jacó</nombre>
-<direccion>50mts sur de la sucursal del Banco Nacional de Jacó  </direccion>
-<lat>9.622414</lat><longi>-84.627342</longi>
-<horario>Lunes-Jueves 7:00 a.m. a 10:00 p.m. , Viernes-Sábado 7:00 a.m. a 10:00 p.m. , Domingo 7:00 a.m. a 10:00 p.m.</horario>
-<telefono><a href="tel:+50626433027">26433027</a> / <a href="tel:+50626432528">2643-2528</a> /(Express) <a href="tel:+50626433611">2643-3611</a></telefono>
-<imagenes>iconopagoluz,iconoExpress,iconoExpress</imagenes>
-</tienda>
-</informacion>
-<informacion id="169">
-<tienda id="189">
-<nombre>Masxmenos Alajuela</nombre>
-<direccion>250mts antes de llegar a McDonald, Barrio La Tropicana</direccion>
-<lat>10.009858</lat><longi>-84.210693</longi>
-<horario>Lunes-Jueves 7:00 a.m. a 12:00 p.m. , Viernes-Sábado 7:00 a.m. a 12:00 p.m. , Domingo 7:00 a.m. a 10:00 p.m.</horario>
-<telefono><a href="tel:+50624434959">2443-4959</a><a href="tel:+50624434975"> / 2443-4975</a></telefono>
-<imagenes>iconopagoluz,iconosalondeBelleza,iconocajero,iconocafe</imagenes>
-</tienda>
-</informacion>
-<informacion id="169">
-<tienda id="190">
-<nombre>Masxmenos Alajuela Centro</nombre>
-<direccion>Frente al costado norte del Mercado Municipal, Alajuela</direccion>
-<lat>10.016646</lat>
-<longi>-84.215671</longi>
-<horario>Lunes-Jueves 7:00 a.m. a 9:00 p.m. , Viernes-Sábado 7:00 a.m. a 9:00 p.m. , Domingo 7:00 a.m. a 8:00 p.m.</horario>
-<telefono><a href="tel:+50624434041">2443-4041</a> / <a href="tel:+50624434060">2443-40601</a> </telefono>
-<imagenes>iconopagoluz,iconocajero</imagenes>
-</tienda>
-</informacion>
-<informacion id="159">
-<tienda id="191">
-<nombre>Masxmenos Las Flores</nombre>
-<direccion>CENTRO COMERCIAL MALL PASEO DE LAS FLORES, FRENTE A UNIVERSIDAD INTERAMERICANA, CARRETERA PRINCIPAL HACIA HEREDIA.</direccion>
-<lat>9.985567</lat><longi>-8.411077</longi>
-<horario>Lunes a Sábado: 8:00am a 12:00pm, Domingo: 8:00am a 9:00pm</horario>
-<telefono><a href="tel:+50622373215">2237-3215</a>/17/24</telefono>
-<imagenes>iconofarmacia,iconopagoluz,iconocajero</imagenes>
-</tienda>
-</informacion>
-<informacion id="9">
-<tienda id="192"><nombre>Masxmenos Rohrmoser</nombre>
-<direccion>CENTRO COMERCIAL PLAZA ROHRMOSER, 250 m ESTE DE LA EMBAJADA ESTEDOS UNIDOS DE AMÉRICA</direccion>
-<lat>9.940488</lat><longi>-84.121456</longi>
-<horario>Lunes a Sábado: 8:00am a 12:00pm, Domingo: 8:00am a 9:00pm</horario>
-<telefono><a href="tel:+50622313815">2231-3815</a>  /<a href="tel:+50622313936">2231-3936</a> //3691</telefono>
-<imagenes>iconopagoluz</imagenes>
-</tienda>
-</informacion>
-<informacion id="162">
-<tienda id="193"><nombre>Masxmenos San Pablo</nombre>
-<direccion>CARRETERA A SANTO DOMINGO DE HEREDIA</direccion>
-<lat>9.988578</lat><longi>-8.409884</longi>
-<horario>Lunes a Sábado: 7:00am a 12:00pm, Domingo: 7:00am a 10:00pm</horario>
-<telefono><a href="tel:+50622607163"> 2260-7163</a> / <a href="tel:+50622607024"> 2260-7024</a>/63</telefono>
-<imagenes>iconofarmacia,iconopagoluz,iconocajero</imagenes>
-</tienda>
-</informacion>
-<informacion id="158">
-<tienda id="194">
-<nombre>Masxmenos Belen</nombre>
-<direccion>800mts este Iglesia Católica, frente a Pedregal</direccion>
-<lat>9.980128</lat><longi>-84.1788025293461</longi>
-<horario>Lunes a Sábado: 7:00am a 12:00pm, Domingo: 7:00am a 10:00pm</horario>
-<telefono><a href="tel:+50622397795"> 2239-7795</a> </telefono>
-<imagenes>iconofarmacia,iconopagoluz,iconocajero</imagenes>
-</tienda>
-</informacion>
-<informacion id="53">
-<tienda id="195">
-<nombre>Masxmenos San Gerardo</nombre>
-<direccion>CENTRO COMERCIAL NOVACENTRO, DEL CRUCE DE MORAVIA, 125 m AL NORTE</direccion>
-<lat>9.951346</lat><longi>-8.405004</longi>
-<horario>Lunes a Sábado: 9:00am a 12:00am, Domingo: 8:00am a 9:00pm</horario>
-<telefono><a href="tel:+50622242140"> 2224-2140</a> / <a href="tel:+50622244712"> 2224-4712</a> </telefono>
-<imagenes>iconofarmacia,iconopagoluz,iconocajero,iconocafe</imagenes>
-</tienda>
-</informacion>
-<informacion id="1">
-<tienda id="196"><nombre>Masxmenos Cuesta Moras</nombre>
-<direccion>PIE DE CUESTA DE MORAS, CALLE 11 Y 13, AVE CENTRAL</direccion>
-<lat>9.93378</lat><longi>-84.073313</longi>
-<horario>Lunes a Sábado: 6:30am a 12:00am, Domingo: 8:00am a 10:00pm</horario>
-<telefono><a href="tel:+50622337811">2233-7811</a> /<a href="tel:+50622553194">2255-3194</a> </telefono>
-<imagenes>iconopagoluz,iconocajero</imagenes>
-</tienda>
-</informacion>
-<informacion id="447">
-<tienda id="197">
-<nombre>Masxmenos Limón</nombre>
-<direccion>DIAGONAL AL COSTADO NOROESTE DEL MERCADO MUNICIPAL DE LIMÓN</direccion>
-<lat>9.993544</lat><longi>-8.302807</longi>
-<horario>Lunes a Sábado: 7:00am a 9:00pm, Domingo: 7:00am a 8:00pm</horario>
-<telefono><a href="tel:+50627981985">2798-1985</a>  / <a href="tel:+50627980070">27980070</a></telefono>
-<imagenes>iconopagoluz,iconocajero</imagenes>
-</tienda>
-</informacion>
-<informacion id="14">
-<tienda id="198">
-<nombre>Masxmenos Escazu</nombre>
-<direccion>CENTRO COMERCIAL DE ESCAZÚ, SAN RAFAEL DE ESCAZÚ</direccion>
-<lat>9.928834</lat><longi>-84.134138</longi>
-<horario>Lunes a Sábado: 6:30am a 12:00pm, Domingo: 6:30am a 10:00pm</horario>
-<telefono><a href="tel:+50622280954">2228-0954</a> </telefono>
-<imagenes>iconopagoluz</imagenes>
-</tienda>
-</informacion>
-<informacion id="60">
-<tienda id="199">
-<nombre>Masxmenos Santa Ana</nombre>
-<direccion>400 m NORTE DE LA CRUZ ROJA DE SANTA ANA</direccion>
-<lat>9.937112</lat><longi>-84.188286</longi>
-<horario>Lunes a Sábado:7:00am a 12:00pm, Domingo: 7:00am a 9:00pm</horario>
-<telefono><a href="tel:+50625820215">2582-0215</a> / <a href="tel:+50625820190">2582-0190</a></telefono>
-<imagenes>iconofarmacia,iconopagoluz</imagenes>
-</tienda>
-</informacion>
-<informacion id="81">
-<tienda id="200">
-<nombre>Masxmenos Tibas</nombre>
-<direccion>CENTRO COMERCIAL FERIA DEL NORTE TIBÁS</direccion>
-<lat>9.958368</lat><longi>-84.077286</longi>
-<horario>Lunes a Sábado: 7:00am a 12:00am, Domingo: 7:00am a 10:00pm</horario>
-<telefono><a href="tel:+50622350535">2235-0535</a>/<a href="tel:+50622972838">2297-2838</a></telefono>
-<imagenes>iconopagoluz</imagenes>
-</tienda>
-</informacion>
-<informacion id="451">
-<tienda id="201">
-<nombre>Masxmenos Guapiles</nombre>
-<direccion>800mts este de la Iglesia Católica de Guápiles</direccion>
-<lat>10.213484</lat><longi>-83.784552</longi>
-<horario>Lunes a Sábado: 7:00am a 9:00pm, Domingo: 7:00am a 8:00pm</horario>
-<telefono><a href="tel:+50627103146">2710-3146</a>//45</telefono>
-<imagenes>iconopagoluz,iconocajero</imagenes>
-</tienda>
-</informacion>
-<informacion id="19">
-<tienda id="202">
-<nombre>Masxmenos San Antonio</nombre>
-<direccion>FRENTE AL CEMENTERIO DE SAN ANTONIO DE DESAMPARADOS.</direccion>
-<lat>9.898004263477752</lat><longi>-84.05344804875575</longi>
-<horario>Lunes a Sábado: 7:00am a 12:00pm, Domingo: 7:00am a 10:00pm</horario>
-<telefono><a href="tel:+50622190137">2219-0137 </a>/<a href="tel:+50622190027">2219-0027 </a>/<a href="tel:+50622181861">2218-1861</a></telefono>
-<imagenes>iconofarmacia,iconopagoluz,iconocajero</imagenes>
-</tienda>
-</informacion>
-<informacion id="86">
-<tienda id="203">
-<nombre>Masxmenos Linconl</nombre>
-<direccion>San José, Moravia,  Los Colegios, Plaza Lincoln,  500mts norte de la escuela Pilar Jiménez, antiguo colegio Lincoln.</direccion>
-<lat>9.961765</lat><longi>-84.055254</longi>
-<horario>LUNES-DOMINGO DE 8:00 am a 10:00 pm </horario>
-<telefono><a href="tel:+50625199080">2519-9080 </a>/<a href="tel:+50625199080">2519-9080</a>/<a href="tel:+50625199082">2519-9082</a></telefono>
-<imagenes>iconofarmacia,iconopagoluz,iconocajero</imagenes>
-</tienda>
-</informacion>
-<informacion id="15">
-<tienda id="204">
-<nombre>Masxmenos Desamparados</nombre>
-<direccion>CENTRO COMERCIAL DESAMPARADOS, FRENTE AL LICEO MONSEÑOR SANABRIA ODIO.</direccion>
-<lat>989.957</lat><longi>-84.068271</longi>
-<horario>Lunes a Sábado: 7:00am a 12:00pm, Domingo: 7:00am a 10:00pm</horario>
-<telefono><a href="tel:+50622503355">2250-3355 </a>/<a href="tel:+50622503356">2250-3356</a></telefono>
-<imagenes>iconopagoluz,iconocafe</imagenes>
-</tienda>
-</informacion>
-<informacion id="89">
-<tienda id="205">
-<nombre>Masxmenos La Granja</nombre>
-<direccion>BARRIO LA GRANJA CONTIGUO BOMBA EL HIGUERÓN</direccion>
-<lat>9.931061</lat><longi>-84.047207</longi>
-<horario>Lunes a Sábado: 7:00am a 12:00pm, Domingo: 7:00am a 9:00pm</horario>
-<telefono><a href="tel:+50622250636">2225-0636</a>/<a href="tel:+50622349083">2234-9083</a></telefono>
-<imagenes>iconopagoluz</imagenes>
+<informacion id="264">
+<tienda id="264">
+<nombre>San Cristobal</nombre>
+<direccion>Local 104 C. C. Plaza San Cristóbal,</direccion>
+<lat>14.602869</lat><longi>-90.581256</longi>
+<horario>Lunes a Domingo 8:00am a 9:00pm</horario>
+<telefono><a href="tel:+5024859615">(502)2485-9615</a></telefono>
+<imagenes>icofarmacia.png,iconopagoluz.png,iconoExpress.png,iconoRemesa.png,iconocajero.png</imagenes>
 
 </tienda>
 </informacion>
-<informacion id="53">
-<tienda id="206">
-<nombre>Masxmenos Guadalupe</nombre>
-<direccion>225m OESTE DEL PARQUE CENTRAL DE GUADALUPE, CONTIGUO A LA MUNICIPALIDAD</direccion>
-<lat>9.945833</lat><longi>-84.055879</longi>
-<horario>Lunes a Domingo: 6:30am a 09:00pm</horario>
-<telefono><a href="tel:+50622251758">2225-1758</a> /<a href="tel:+50622835341">2283-5341</a> </telefono>
-<imagenes>iconopagoluz</imagenes>
+<informacion id="265">
+<tienda id="265">
+<nombre>Montufar</nombre>
+<direccion>12 Calle 0-93, zona 9</direccion>
+<lat>14.603757</lat><longi>-90.525858</longi>
+<horario>Lunes a Jueves 7:30am a 8:30pm, Viernes 7:30am a 9:00pm, Sábado 8:00am a 9:00pm, Domingo 8:00am a 8:30pm</horario>
+<telefono><a href="tel:+5024859512">(502)2485-9512</a>o<a href="tel:+5024859525">(502) 24859525</a></telefono>
+<imagenes>icofarmacia.png,iconoExpress.png,iconoOptico.png,iconoRemesa.png,iconocafe.png,iconocajero.png</imagenes>
+</tienda>
+</informacion>
+<informacion id="267">
+<tienda id="267">
+<nombre>Novicentro</nombre>
+<direccion>17 Av. 26-75, zona 11</direccion>
+<lat>14.602345</lat><longi>-90.562309</longi>
+<horario>Lunes a Domingo 8:00am a 9:00pm</horario>
+<telefono><a href="tel:+50224859555">(502)2485-9555</a>o<a href="tel:+50224859557">(502)24859557</a></telefono>
+<imagenes>iconoExpress.png,iconoRemesa.png,iconocajero.png</imagenes>
+</tienda>
+</informacion>
+<informacion id="270">
+<tienda id="270">
+<nombre>Megacentro</nombre>
+<direccion>Local 1, 4 y 5, C. C. Megacentro, Calz. Roosevelt 29-60, zona 7</direccion>
+<lat>14.625585</lat><longi>-90.555094</longi>
+<horario>Lunes a Domingo 8:00am a 9:00pm</horario>
+<telefono><a href="tel:+50224859645">(502)2485-9645</a>o<a href="tel:+50224859631">(502)2485-9631</a>o<a href="tel:+50224859632">(502)2485-9632</a>o
+<a href="tel:+50224859635">(Express)(502)2485-9635</a></telefono>
+<imagenes>icofarmacia.png,iconopagoluz.png,iconoExpress.png,iconoOptico.png,iconoRemesa.png,iconocajero.png</imagenes>
+</tienda>
+</informacion>
+<informacion id="271">
+<tienda id="271">
+<nombre>Asunción</nombre>
+<direccion>DIAG. 14, 20-55, Z. 5 COL. ARRIVILLAGA</direccion>
+<lat>14.626197</lat><longi>-90.496075</longi>
+<horario>Lunes a Domingo 8:30am a 9:00pm</horario>
+<telefono><a href="tel:+50224859565">(502)2485-9565</a>o<a href="tel:+50224859570"> (Express)(502)2485-9570</a></telefono>
+<imagenes>icofarmacia.png,iconopagoluz.png,iconoExpress.png,iconoRemesa.png,iconocafe.png,iconocajero.png</imagenes>
+</tienda>
+</informacion>
+<informacion id="272">
+<tienda id="272">
+<nombre>Salida al Pacifico</nombre>
+<direccion>Calzada Aguilar Batres 32-00 Zona 11</direccion>
+<lat>14.606236</lat><longi>-90.544735</longi>
+<horario>Lunes a Domingo 8:00am a 9:00pm</horario>
+<telefono><a href="tel:+50224859882">(502)2485-9882</a></telefono>
+<imagenes>icofarmacia.png,iconoExpress.png,iconoOptico.png,iconoRemesa.png,iconocajero.png</imagenes>
+</tienda>
+</informacion>
+<informacion id="273">
+<tienda id="273">
+<nombre>Megaseis</nombre>
+<direccion>15 Av. 16-11, zona 6</direccion>
+<lat>14.661477</lat><longi>-90.495345</longi>
+<horario>Lunes, Viernes y Sábado 8:30am a 9:00pm, Martes, a jueves 8:30am 8:30pm  Domingo 8:30am a 8:30pm</horario>
+<telefono><a href="tel:+5022485965">(502)2485-9655</a></telefono>
+<imagenes></imagenes>
+</tienda>
+</informacion>
+<informacion id="274">
+<tienda id="274">
+<nombre>Petapa</nombre>
+<direccion>Av. Petapa y 35 calle Zona  12</direccion>
+<lat>14.583524</lat><longi>-90.546691</longi>
+<horario>Lunes a Domingos 8:30am a 9:00pm</horario>
+<telefono><a href="tel:+50224859625">(502)2485-9625</a></telefono>
+<imagenes>icofarmacia.png,iconopagoluz.png,iconoExpress.png,iconoOptico.png,iconoRemesa.png,iconocajero.png</imagenes>
+</tienda>
+</informacion>
+<informacion id="275">
+<tienda id="275">
+<nombre>Utatlan</nombre>
+<direccion>2a. Calle A, Utatlán II, 32-25, zona 11</direccion>
+<lat>14.593904</lat><longi>-90.559402</longi>
+<horario>Lunes a Domingo 8:00am a 8:30pm</horario>
+<telefono><a href="tel:+50224859500">(502)2485-9500</a>o<a href="tel:+50224859502">(502)2485-9502</a>o<a href="tel:+50224859610">(Express)(502)2485-9610</a></telefono>
+<imagenes>iconopagoluz.png,iconoExpress.png,iconoOptico.png,iconoRemesa.png,iconocajero.png</imagenes>
+</tienda>
+</informacion>
+<informacion id="276">
+<tienda id="276">
+<nombre>Montserrat</nombre>
+<direccion>Local 90, C. C. Montserrat, zona 4,  Mixco</direccion>
+<lat>14.642129</lat><longi>-9.056796</longi>
+<horario>Lunes a domingo 9:00am a 9:00pm</horario>
+<telefono><a href="tel:+50224859715">(502)2485-9715</a>o<a href="tel:+50224859710">(Express)(502)2485-9710</a></telefono>
+<imagenes></imagenes>
+</tienda>
+</informacion>
+<informacion id="277">
+<tienda id="277">
+<nombre>Parroquia</nombre>
+<direccion>Calz. J. M. y Vidaurre 16-80,  Zona.  6</direccion>
+<lat>14.650057</lat><longi>-90.497287</longi>
+<horario>Lunes a domingo 8:30am a 9:00pm</horario>
+<telefono><a href="tel:+50224859575">(502)2485-9575</a>o<a href="tel:+50224859577">(Express)(502)2485-9577</a></telefono>
+<imagenes>iconopagoluz.png,iconoExpress.png,iconoOptico.png,iconoRemesa.png,iconocajero.png</imagenes>
+</tienda>
+</informacion>
+<informacion id="278">
+<tienda id="278">
+<nombre>18 Calle</nombre>
+<direccion>18 Calle 6-85, zona 1</direccion>
+<lat>14.631037</lat><longi>-90.514169</longi>
+<horario>Lunes a Domingo 8:00am a 8:00pm</horario>
+<telefono><a href="tel:+50224859695">(502)2485-9695</a></telefono>
+<imagenes>iconopagoluz.png,iconoExpress.png,iconoRemesa.png,iconocajero.png</imagenes>
+</tienda>
+</informacion>
+<informacion id="279">
+<tienda id="279">
+<nombre>Aguilar Batres</nombre>
+<direccion>Calz. Ag. Batres y 13 calle z 11</direccion>
+<lat>1.460628</lat><longi>-90.544738</longi>
+<horario>Lunes a Domingo 8:00am a 9:00pm</horario>
+<telefono><a href="tel:+50224859525">(502)2485-9525</a></telefono>
+<imagenes>iconosalondeBelleza.png,iconoExpress.png,iconoRemesa.png,iconocajero.png</imagenes>
+</tienda>
+</informacion>
+<informacion id="282">
+<tienda id="282">
+<nombre>El Naranjo</nombre>
+<direccion>14 avenida condado El naranjo 9-20 zona 4 de mixco</direccion>
+<lat>14.654728</lat><longi>-90.540272</longi>
+<horario>Lunes a Viernes 8:30am a 9:00pm, Sábado y Domingo 8:00am a 9:00pm</horario>
+<telefono><a href="tel:+50224196161">(502)2419-6161</a>o
+<a href="tel:+50224196162">(502)2419-6162</a>o
+<a href="tel:+50224196262">(Express)(502)24196262</a></telefono>
+<imagenes>icofarmacia.png,iconopagoluz.png,iconoExpress.png,iconoOptico.png,iconoRemesa.png,iconocajero.png</imagenes>
+</tienda>
+</informacion>
+<informacion id="283">
+<tienda id="283">
+<nombre>Montblac</nombre>
+<direccion>Local 72, C.C. Mont Blanc 4a. Calle 18-01, zona  3, Quetz.</direccion>
+<lat>1.484375</lat><longi>-91.522797</longi>
+<horario>Lunes a Jueves 8:00am a 8:30pm, Viernes y Sábado 8:00am a 9.00pm, Domingo 8:30am a 9.00pm</horario>
+<telefono><a href="tel:+50277654895">(502)7765-4895</a></telefono>
+<imagenes></imagenes>
+</tienda>
+</informacion>
+<informacion id="284">
+<tienda id="284">
+<nombre>Huehuetenango</nombre>
+<direccion>Locales 23 y 41, C. C. El Triángulo 9a. AV. 6-132, Zona 1</direccion>
+<lat>15.317088</lat><longi>-91.474459</longi>
+<horario>Lunes a Viernes 8:30am a 9:00pm, Sábado y Domingo 8:00am a 9:00pm</horario>
+<telefono><a href="tel:+50277682340">(502)7768-2340</a>o
+<a href="tel:+50277640375">(502)7764-0375 </a>o
+<a href="tel:+50277640376">(502)7764-0376</a>o
+<a href="tel:+50277682345">(502)7768-2345</a></telefono>
+<imagenes>icofarmacia.png,iconoRemesa.png,iconocajero.png</imagenes>
 
 </tienda>
 </informacion>
-<informacion id="90">
-<tienda id="208">
-<nombre>Masxmenos Sabanilla</nombre>
-<direccion>50 m OESTE DE LA IGLESIA CATÓLICA DE SABANILLA MONTES DE OCA</direccion>
-<lat>9.944303</lat><longi>-84.034413</longi>
-<horario>Lunes a Sábado: 7:00am a 12:00pm, Domingo: 7:00am a 9:00pm</horario>
-<telefono><a href="tel:+50622805106">2280-5106</a>  / <a href="tel:+50622805221">2280-5221</a>   / <a href="tel:+50622835761">2283-5761</a>  </telefono>
-<imagenes>iconofarmacia,iconopagoluz,iconocajero</imagenes>
-</tienda>
-
-</informacion>
-<informacion id="296">
-<tienda id="209">
-<nombre>Masxmenos Tres Ríos</nombre>
-<direccion>100 este Cementerio Tres Ríos</direccion>
-<lat>9.908584080520237</lat><longi>-83.98884395417697</longi>
-<horario>Lunes a Domingo: 7:00am a 10:00am</horario>
-<telefono><a href="tel:+50622797453">2279-7453</a>/<a href="tel:+50622797457">2279-7457</a>  </telefono>
-<imagenes>iconofarmacia,iconopagoluz,iconocajero</imagenes>
-</tienda>
-</informacion> 
-<informacion id="999">
-<tienda id="209">
-<nombre>Masxmenos Cartago</nombre>
-<direccion>CENTRO COMERCIAL METROCENTRO Av. 4ta, ENTRADA A CARTAGO ESQUINA OPUESTA AL CEMENTERIO GENERAL O CONTIGUO A DITESA</direccion>
-<lat>9.866989</lat><longi>-83.942792</longi>
-<horario>Lunes-Jueves 8:00 a.m. a 12:00 p.m. , Viernes-Sábado 8:00 a.m. a 12:00 p.m. ,Domingo 8:00 a.m. a 9:00 p.m.</horario>
-<telefono><a href="tel:+50625915043">2591-5043</a>/<a href="tel:+50625915065">2591-5065</a> /<a href="tel:+50625915049">2591-5049</a>  </telefono>
-<imagenes></imagenes>
+<informacion id="285">
+<tienda id="285">
+<nombre>Mazatenango</nombre>
+<direccion>KM. 158, Carr. A Mazatenango, C. C. Plaza Américas</direccion>
+<lat>1.453458</lat><longi>-91.492483</longi>
+<horario>Lunes a Viernes 8:30am a 9:00pm, Sábado y Domingo 8:00am a 9:00pm</horario>
+<telefono><a href="tel:+50278722108">(502)7872-2108</a>o
+<a href="tel:+50278720699">(Express)(502)7872-0699</a></telefono>
+<imagenes>icofarmacia.png,iconoExpress.png,iconoOptico.png,iconoRemesa.png,iconocajero.png</imagenes>
 </tienda>
 </informacion>
-<informacion id="998">
-<tienda id="209">
-<nombre>Masxmenos Guachipelin</nombre>
-<direccion>300 norte Paco shopping center, Guachipelin Escazú</direccion>
-<lat>9.934403</lat><longi>-84.149789</longi>
-<horario>Lunes-Jueves 7:00 a.m. a 12:00 p.m. , Viernes-Sábado 7:00 a.m. a 12:00 p.m. ,Domingo 7:00 a.m. a 10:00 p.m.</horario>
-<telefono><a href="tel:+50640319240">4031-9240</a>  </telefono>
-<imagenes></imagenes>
+<informacion id="286">
+<tienda id="286">
+<nombre>Costa Grande</nombre>
+<direccion>4a. Av. Norte, 3-61, Zona 2</direccion>
+<lat>14.309605</lat><longi>-90.783527</longi>
+<horario>Lunes a Viernes 9.00am a 9.00pm, Sábado y Domingo 8:00am a 9:00pm</horario>
+<telefono><a href="tel:+50278897209">(502)7889-7209</a>o
+<a href="tel:+50278893087">(502)7889-3087</a></telefono>
+<imagenes>icofarmacia.png,iconopagoluz.png,iconoExpress.png,iconoRemesa.png,iconocajero.png</imagenes>
 </tienda>
 </informacion>
-<informacion id="997">
-<tienda id="209">
-<nombre>Masxmenos Hatillo</nombre>
-<direccion>CENTRO COMERCIAL HATILLO #6, 150 m SUR 100 m OESTE DEL COLEGIO ROBERTO BRENES MESÉN. COSTADO DEL PUENTE PEATONAL DE HATILLO 6.</direccion>
-<lat>9.919056</lat><longi>-84.106096</longi>
-<horario>Lunes-Jueves 7:00 a.m. a 9:00 p.m. , Viernes-Sábado 7:00 a.m. a 12:00 p.m. ,Domingo 7:00 a.m. a 10:00 p.m.</horario>
-<telefono><a href="tel:+50622547179">2254-7179</a>  </telefono>
-<imagenes></imagenes>
+<informacion id="289">
+<tienda id="289">
+<nombre>Chiquimula</nombre>
+<direccion>3a. Calle y 7a. Av. Esquina  Zona 1, Chiquimula</direccion>
+<lat>14.801161</lat><longi>-89.545583</longi>
+<horario>Lunes a Domingo 8:00am a 9:00pm</horario>
+<telefono><a href="tel:+50279426235">(502)7942-6235</a></telefono>
+<imagenes>iconopagoluz.png,iconoExpress.png,iconoRemesa.png,iconocajero.png</imagenes>
 </tienda>
 </informacion>
-<informacion id="996">
-<tienda id="209">
-<nombre>Masxmenos Plaza América</nombre>
-<direccion>CENTRO COMERCIAL HATILLO #6, 150 m SUR 100 m OESTE DEL COLEGIO ROBERTO BRENES MESÉN. COSTADO DEL PUENTE PEATONAL DE HATILLO 6.</direccion>
-<lat>9.912263</lat><longi>-84.099414</longi>
-<horario>Lunes-Sábado 7:00 a.m. a 12:00 p.m. ,Domingo 7:00 a.m. a 10:00 p.m.</horario>
-<telefono><a href="tel:+50622545458">2254-5458</a> / <a href="tel:+5062254-6995">2254-6995</a>  </telefono>
-<imagenes></imagenes>
+<informacion id="290">
+<tienda id="290">
+<nombre>Cóban</nombre>
+<direccion>Local 52, CC Plaza Magdalena</direccion>
+<lat>1.546978</lat><longi>-90.385299</longi>
+<horario>Lunes a sabado 8:30am a 9:30pm, Domingo 8:30 a 9:00pm</horario>
+<telefono><a href="tel:+50279514554">(502)7951-4554</a>o<a href="tel:+50279514554">(Express)(502)7951-4554</a> Servicio al Cliente
+<a href="tel:+50279514550">(502)7951-4550</a><a href="tel:+5021951-4547">(502)1951-4547</a></telefono>
+<imagenes>icofarmacia.png,iconoRemesa.png,iconocajero.png</imagenes>
 </tienda>
-</informacion> 
+</informacion>
 </tiendas>  
