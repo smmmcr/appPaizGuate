@@ -9,7 +9,7 @@ var fileSystem = {};
 document.addEventListener("deviceready", onDeviceReady, false);
  function onDeviceReady() {
 //Inicializamos las BD
-//checkConnection();
+checkConnection();
     }
 window.addEventListener('load', function() {
 			document.body.addEventListener('touchmove', function(e) {
@@ -25,7 +25,7 @@ $(document).one("mobileinit", function () {
 	$("#cargaimg" ).show();
 	/*alert($(window).width());
 	alert($(window).height());*/
-	appDB();
+	//appDB();
 
 });
 	 function checkConnection() {
@@ -64,7 +64,6 @@ function populateRecetasDB(tx) {
 	 tx.executeSql('CREATE TABLE IF NOT EXISTS banner (id INTEGER PRIMARY KEY, nombreBanner TEXT, estado INTEGER)');
 	 tx.executeSql('CREATE TABLE IF NOT EXISTS guia (id INTEGER PRIMARY KEY, nombreImg TEXT, estado INTEGER)');
 	 tx.executeSql('CREATE TABLE IF NOT EXISTS miercolesFrescos (id INTEGER PRIMARY KEY,  nombreImg TEXT, estado INTEGER)');
-	 //tx.executeSql('CREATE TABLE IF NOT EXISTS glutenRectCat ()');
 	 SincronizarDBrecetas(finSincro);
 }
 // Transaction error callback
